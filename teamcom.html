@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../public/vendor/@fortawesome/fontawesome-free/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css">
+  <title>TED - Team Communication</title>
+</head>
+
+<body>
+  <!-- Navigation-->
+  <header class="sticky top-0 z-50 shadow-md">
+    <nav
+      class="top-0 z-50 w-full flex flex-wrap items-start justify-between py-3 navbar-expand-lg bg-white fixed shadow-md">
+      <div class=" w-full mx-auto px-5 flex flex-wrap ">
+        <div class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
+          <div class="flex-shrink-0 flex items-center">
+           
+            <img class="hidden lg:block h-14 w-auto" src="img/logo.svg" alt="Workflow">
+          </div>
+          <button
+            class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+            type="button" onclick="toggleNavbar('example-collapse-navbar')">
+            <i class="text-secondary fas fa-bars"></i>
+          </button>
+        </div>
+        <div class="lg:flex flex-grow items-center bg-white lg:bg-opacity-0 lg:shadow-none hidden"
+          id="example-collapse-navbar">
+          <ul class=" flex flex-col lg:flex-row list-none lg:ml-auto items-center">
+            <li class="inline-block relative">
+              <a class="px-8 py-2 flex items-center text-sm uppercase font-body font-semibold leading-snug text-secondary hover:opacity-75 hover:bg-secondary hover:text-white px-3 py-2 rounded-full"
+                href="#pablo" onclick="openDropdown(event,'demo-pages-dropdown')">
+                Development content
+              </a>
+              <div class="hidden bg-white text-base z-50 float-left py-2 list-none text-left rounded shadow-lg min-w-48"
+                id="demo-pages-dropdown">
+                <a href="#"
+                  class="text-sm py-3 px-4 font-body block w-full whitespace-nowrap bg-transparent text-blueGray-700">
+                  Drop item 1
+                </a>
+                <a href="#"
+                  class="text-sm py-2 px-4 font-body block w-full whitespace-nowrap bg-transparent text-blueGray-700">
+                  Drop item 2
+                </a>
+                <a href="#"
+                  class="text-sm py-2 px-4 font-body block w-full whitespace-nowrap bg-transparent text-blueGray-700">
+                  Drop item 3
+                </a>
+                <a href="#"
+                  class="text-sm py-2 px-4 font-body block w-full whitespace-nowrap bg-transparent text-blueGray-700">
+                  Drop item 4
+                </a>
+              </div>
+            </li>
+            <li class="flex items-center">
+              <button
+                class="px-8 py-2 flex items-center text-sm uppercase font-body font-semibold leading-snug text-secondary hover:opacity-75 hover:bg-secondary hover:text-white px-3 py-2 rounded-full"
+                type="button">
+                About TED
+              </button>
+            </li>
+            <li class="flex items-center">
+              <button
+                class="px-8 py-2 flex items-center text-sm uppercase font-body font-semibold leading-snug text-secondary hover:opacity-75 hover:bg-secondary hover:text-white px-3 py-2 rounded-full"
+                type="button">
+                Log out
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Main content -->
+  <main class="relative">
+    <!-- Intro section -->
+    <section class="">
+      <div class="flex bg-white w-full z-0">
+
+        <div class="my-40 w-1/2">
+          <div class="ml-20 px-10">
+            <h3 class="text-6xl font-bold font-body text-left text-secondary tracking-wider uppercase">
+              Team<br>Communication
+            </h3>
+            <br>
+            <h3 class="text-tedpink font-body font-semibold text-xl text-left">Does your team communicate effectively
+              with each other to achieve the team task? Does your team make decisions effectively?</h3>
+            <br>
+            <h3 class="text-secondary font-body text-lg text-left">This section explores team communication and team
+              decision making. Communication is an important aspect of any team. Effective communication can greatly
+              improve the team’s outcomes. In addition people feel more engaged and motivated when communication is
+              effective.</h3>
+            <br>
+            <div class="">
+              <h6
+                class="bg-tedpink text-white font-semibold uppercase text-sm py-3 px-5 text-center rounded-full px-1 rounded-lg">
+                Select the buttons below to view supporting materials
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div class="w-11/12"> <img class="flex h-full w-full object-cover" src="img/teamcomBG.jpg" alt=""></div>
+
+      </div>
+    </section>
+    <!-- Why communication section -->
+    <section>
+
+      <div class="z-0  bg-gray-200 relative flex flex-col min-w-0 break-words w-full mb-4">
+        <div class="container mx-auto">
+          <div class="justify-center flex flex-wrap">
+
+            <div class="w-full lg:w-12/12 px-4 m-10">
+              <div class="mb-10 border-tedpink border-l-6 pl-5">
+                <h3 class="text-3xl font-bold font-body text-left text-secondary uppercase ">
+                  Effective team communication occurs if the following are in place:
+                </h3>
+              </div>
+              <div class="flex flex-wrap">
+                <div class="w-full lg:w-4/12 ">
+                  <a href="#">
+                    <div
+                      class="hover:-mt-4 relative flex flex-col min-w-0 break-words w-full mb-6  ease-linear transition-all duration-150 px-14">
+                      <img alt="..." class="align-middle border-none max-h-full h-auto rounded-full"
+                        src="img/safeClimate.png" />
+                    </div>
+                  </a>
+                  <h5 class="text-lg font-bold pb-4 text-center text-tedblue300 uppercase">
+                    A safe climate which enables <br> people to participate
+                  </h5>
+                </div>
+
+                <div class="w-full lg:w-4/12">
+                  <a href="#">
+                    <div
+                      class="hover:-mt-4 relative flex flex-col min-w-0 break-words w-full mb-6  ease-linear transition-all duration-150 px-14">
+                      <img alt="..." class="align-middle border-none max-w-full h-auto rounded-full"
+                        src="img/teamMem.png" />
+                    </div>
+                  </a>
+                  <h5 class="text-lg font-bold pb-4 text-center text-tedpink uppercase">
+                    Team members to interact and participate in communication
+                  </h5>
+                </div>
+
+                <div class="w-full lg:w-4/12 ">
+                  <a href="#">
+                    <div
+                      class="hover:-mt-4 relative flex flex-col min-w-0 break-words w-full mb-6  ease-linear transition-all duration-150 px-14">
+                      <img alt="..." class="align-middle border-none max-w-full h-auto rounded-full"
+                        src="img/infoSharing.png" />
+                    </div>
+                  </a>
+                  <h5 class="text-lg font-bold pb-4 text-center text-tedgreen300 uppercase">
+                    Good levels of <br> information sharing
+                  </h5>
+                </div>
+              </div>
+            </div>
+            <div class="grid grid-cols-2 gap-4 m-5 border-tedpink border-b-3">
+              <div class="w-full pb-5 px-10">
+                <p class="text-secondary font-body font-bold">Team communication is about sharing information,
+                  providing feedback and sharing ideas. It is a key
+                  feature of team effectiveness.</p>
+                <p class="text-secondary font-body font-normal">Effective team communication can help ensure there are
+                  no misunderstandings. It helps to organise the
+                  team and give clarity on work objectives. Effective communication can also improve confidence levels
+                  among team members to share ideas or raise concerns.</p>
+              </div>
+              <!-- ... -->
+              <div class="my-10  space-x-10 font-body flex flex-nowrap justify-center absolute bottom-0 right-40 ">
+                <button
+                  class="bg-tedpink text-white font-semibold text-sm py-3 px-5 text-center rounded-full px-1 shadow-lg ">
+                  Top tips for communication
+                </button>
+                <button
+                  class="bg-tedpink text-white font-semibold  text-sm py-3 px-5 text-center rounded-full px-1 shadow-lg ">
+                  Example questions
+                </button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Effective team communication section -->
+
+    <!-- Regular team meetings section -->
+    <section>
+      <div class="w-full"> <img class="flex h-full w-full object-cover" src="img/staffTogether.jpg" alt=""></div>
+      <div class="z-0  bg-white relative flex flex-col min-w-0 break-words w-full mb-8">
+        <div class="container mx-auto">
+          <div class="justify-center flex flex-wrap">
+
+            <div class="w-full lg:w-12/12 px-4 m-10">
+              <div class=" border-tedpink border-l-6 pl-5">
+                <h3 class="text-3xl font-bold font-body text-left text-secondary uppercase ">
+                  Do you hold regular and effective team meetings?
+                </h3>
+                <p class="text-lg font-body text-left text-secondary">Effective teams meet regularly to share
+                  information, suggest ideas and review work. It is best practice to schedule a meeting every six weeks.
+                </p>
+              </div>
+
+            </div>
+            <div class="m-5 border-tedpink border-b-3">
+              <div class="grid grid-cols-2 gap-8 px-24 mb-5">
+                <div class="w-full">
+                  <h3 class="text-2xl font-bold font-body text-left text-secondary">Team Huddles</h3><br>
+                  <p class="text-lg font-body text-left text-secondary  ">Build time into the day for a 10 minute team
+                    huddle. You can use this chance to rally everyone for tasks ahead and give the team opportunity to
+                    ask questions or raise concerns.
+                    <br>
+                    <br>
+                    Keep this meetings regular and people will start to see the value in them. The team will get to know
+                    that this is a time for discussion and come prepared. By having huddles you can resolve several
+                    issues at once.
+                  </p>
+                </div>
+                <div class="w-full">
+                  <h3 class="text-2xl font-bold font-body text-left text-secondary">Do you meet regularly with
+                    individual members of the team?</h3>
+                  <br>
+                  <p class="text-lg font-body text-left text-secondary">Make sure you schedule time in with individual
+                    team members to meet with you on a one to one basis.
+                    <br>
+                    <br>
+                    This provides you with an opportunity to discuss work progress, communicate relevant information and
+                    give them a chance to share ideas or provide feedback.
+                  </p>
+                </div>
+              </div>
+              <div class="flex flex-wrap justify-center gap-10 pb-10">
+                <button
+                  class="text-white font-body text-center text-sm shadow-md  bg-tedpink hover:bg-tedpink border-solid border-pink-500 hover:text-white active:bg-pink-600 font-bold  px-10 py-3 rounded-full outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                  type="button">
+                  Example team meeting agenda
+                </button>
+                <button
+                  class="text-white font-body text-center text-sm shadow-md  bg-tedpink hover:bg-tedpink border-solid border-pink-500 hover:text-white active:bg-pink-600 font-bold  px-10 py-3 rounded-full outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                  type="button">
+                  Running effective meetings
+                </button>
+                <button
+                  class="text-white font-body text-center text-sm shadow-md  bg-tedpink hover:bg-tedpink border-solid border-pink-500 hover:text-white active:bg-pink-600 font-bold  px-10 py-3 rounded-full outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                  type="button">
+                  Team Meeting Evaluation
+                </button>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Team Huddles section  -->
+    <section>
+      <div class="z-0  bg-gray-200 relative flex flex-col min-w-0 break-words w-full">
+
+        <div class="container mx-auto">
+          <div class="justify-center flex flex-wrap">
+
+            <div class="w-full lg:w-12/12 px-4 m-10">
+              <div class=" border-tedpink border-l-6 pl-5">
+                <h3 class="text-3xl font-bold font-body text-left text-secondary uppercase ">
+                  Develop opportunities to suggest ideas and provide feedback
+                </h3>
+                <p class="text-lg font-body text-left text-secondary">Make sure you build in feedback mechanisms so that
+                  the team can generate ideas and solutions.</p>
+              </div>
+            </div>
+            <div class="flex flex-row justify-center gap-20 ">
+              <div class="bg-white py-4 px-4  rounded-full border-gray-300 border-2">
+                <div class="flex justify-center items-center text-center h-64 w-64 ">
+                  <div class="font-body ">
+                    <p class="uppercase text-tedblue300 font-semibold ">Staff Survey <br> Manager toolkit</p>
+                    <br>
+                    <p class="text-1xl text-tedblueDark">Make use of the staff survey to have conversations with the
+                      team about what changes you can make to improve practice or develop staff.</p>
+                    <br>
+                    <button class="bg-tedgray px-5 py-1 rounded-xl font-bold text-tedblue300">Open ></button>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-white py-4 px-4  rounded-full border-gray-300 border-2">
+                <div class="flex justify-center items-center text-center h-64 w-64 ">
+                  <div class="font-body ">
+                    <p class="uppercase text-tedpink font-semibold ">Our Change</p>
+                    <br>
+                    <p class="text-1xl text-tedblueDark">A tool that brings the team together to discuss issues, ideas
+                      and solutions. The focus is on the team generating their own ideas and agreeing their own actions
+                      to make improvements.</p>
+                    <br>
+                    <button class="bg-tedgray px-5 py-1 rounded-xl font-bold text-tedblue300">Open ></button>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-white py-4 px-4  rounded-full border-gray-300 border-2">
+                <div class="flex justify-center items-center text-center h-64 w-64 ">
+                  <div class="font-body ">
+                    <p class="uppercase text-tedgreen300 font-semibold ">The <br> Perfect Shift</p>
+                    <br>
+                    <p class="text-1xl text-tedblueDark">A tool that helps you to think about improving how things are
+                      done and it could support improving communication within your team.</p>
+                    <br>
+                    <button class="bg-tedgray px-5 py-1 rounded-xl font-bold text-tedblue300">Open ></button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="flex flex-row justify-center gap-20 pb-20 ">
+              <div class="bg-white py-4 px-4  rounded-full border-gray-300 border-2">
+                <div class="flex justify-center items-center text-center h-64 w-64 ">
+                  <div class="font-body ">
+                    <p class="uppercase text-tedorange300 font-semibold ">YOU SAID, WE DID</p>
+                    <br>
+                    <p class="text-1xl text-tedblueDark">Close the loop with staff by communicating what is happening as
+                      a result of their feedback, click here for a “You said, We Did” poster template.</p>
+                    <br>
+                    <button class="bg-tedgray px-5 py-1 rounded-xl font-bold text-tedblue300">Open ></button>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-white py-4 px-4  rounded-full border-gray-300 border-2">
+                <div class="flex justify-center items-center text-center h-64 w-64 ">
+                  <div class="font-body ">
+                    <p class="uppercase text-tedpurple font-semibold ">FIX IT FRIDAY</p>
+                    <br>
+                    <p class="text-1xl text-tedblueDark">A tool that helps the team to identify
+                      improvements.<br><br><br></p>
+                    <br>
+                    <button class="bg-tedgray px-5 py-1 rounded-xl font-bold text-tedblue300">Open ></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Develop opportunities -->
+
+    <!-- Team effectiveness decisions -->
+    <section>
+      <div class="z-0  bg-tedpink relative flex flex-col min-w-0 break-words w-full">
+
+        <div class="container mx-auto flex flex-wrap">
+
+          <div class=" px-4 m-10  ">
+            <div class=" border-white border-l-6 pl-5">
+              <h3 class="text-4xl font-bold font-body text-left text-white uppercase ">
+                More top tips
+              </h3>
+            </div>
+          </div>
+          <div class="bg-white py-4 px-10 w-1/3 h-full ml-60">
+            <div class="flex justify-center items-center text-center">
+              <div class="font-body text-left">
+                <p class="text-2xl uppercase text-secondary font-semibold">Noticeboard</p><br>
+                <p class="text-base text-secondary">Don't forget noticeboards are quick
+                  and simple ways to share information.</p>
+                <br>
+                <p class="text-2xl uppercase text-secondary font-semibold">Ideas book</p><br>
+                <p class="text-base text-secondary">Why not set up a book within the work area where the team can log
+                  ideas? Make sure to review this and feedback to the team. It may be helpful to invite the team to log
+                  issues and also their ideas for improving the issue.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full"> <img class="flex h-full w-full object-cover" src="img/nhsStaff.jpg" alt=""></div>
+
+      </div>
+      <div class="z-0  bg-tedlightBlue relative flex flex-col min-w-0 break-words w-full ">
+        <div class="container mx-auto">
+          <div class="grid grid-cols-2 gap-4">
+            <div class="w-full lg:w-12/12 py-5 mx-10">
+              <div class=" border-tedpink border-l-6 pl-5">
+                <h3 class="text-3xl font-bold font-body text-left text-secondary uppercase ">
+                  DEVELOP YOUR TEAM'S <br> EFFECTIVENESS AT MAKING DECISIONS
+                </h3>
+
+              </div>
+              <div class="w-4/5 pt-5 pl-6">
+
+                <p class="text-2xl  text-secondary font-semibold font-body">Often groups can make better decisions that
+                  one person
+                  operating on their own, this is because decisions often require considering lots of information and
+                  the
+                  most effective decisions are reached by fully exploring a variety of options. </p><br>
+                <p class="text-base  text-secondary">Making team decisions can also help with team engagement
+                  because if people are involved in decision making this makes them feel more valued and they are more
+                  likely to understand the reasons about why decisions are made.</p>
+              </div>
+
+            </div>
+
+            <div>
+              <div class="w-full bg-white p-10">
+                <p class="text-base text-secondary text-center mx-20">It is important that you involve the right people with
+                  decision
+                  making and you take the right approach to group decision making. This depends on a number of
+                  different factors, including:</p>
+                <br>
+                <ul class="text-lg text-secondary uppercase font-body font-semibold list-none text-center">
+                  <li class="my-2">Type of decision</li>
+                  <li class="my-2">Time and resources available</li>
+                  <li class="my-2">Nature of the task being work on</li>
+                  <li class="my-2">The environment the group wants to create</li>
+                  <li class="my-2">The amount of buy-in needed</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-wrap justify-center gap-10 pb-10 pt-10">
+            <button
+              class="text-white font-body text-center text-sm shadow-md  bg-tedpink  hover:bg-tedpinkborder-solid border-pink-500 hover:text-white active:bg-pink-600 font-bold  px-10 py-3 rounded-full outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+              type="button">
+              Mind Tools
+            </button>
+            <button
+              class="text-white font-body text-center text-sm shadow-md  bg-tedpink hover:bg-tedpink border-solid border-pink-500 hover:text-white active:bg-pink-600 font-bold  px-10 py-3 rounded-full outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+              type="button">
+              The Stepladder technique
+            </button>
+            <button
+              class="text-white font-body text-center text-sm shadow-md  bg-tedpink hover:bg-tedpink border-solid border-pink-500 hover:text-white active:bg-pink-600 font-bold  px-10 py-3 rounded-full outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+              type="button">
+              The Circle of Influence
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- Decision Matrix Grid -->
+    <section>
+      <div class="relative pt-20 bg-gray-100">
+        <div class="flex flex-wrap justify-center gap-8 items-center pb-10">
+          <div class="w-fumd:ll w-1/12 items-center ">
+            <img alt="..." class="max-w-full" " src=" img/ted_forTeams.png">
+          </div>
+          <div class="w-full md:w-1/2 md:px-4">
+            <div class="">
+              <h1 class="text-tedpink font-bold font-body text-xl flex">
+                Decision Matrix Grid
+              </h1>
+              <p class="mt-4 mb-4 text-base text-secondary flex">
+                The Decision Matrix Grid is a tool that can help you make decisions as a team, Click here Having
+                discussions as a team helps to build group understanding about why decisions have been made. This tool
+                also helps you objectively consider your options and make appropriate decisions. This tool could also
+                help you if you are leading change and want to involve the team in bringing about the change.
+              </p>
+              <button
+                class="text-white font-body text-center text-sm shadow-md  bg-tedpink hover:bg-tedpink border-solid border-pink-500 hover:text-white active:bg-pink-600 font-bold  px-10 py-3 rounded-full outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                type="button">
+                Decision Matrix Grid
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-wrap justify-center gap-8 items-center pb-10">
+          <div class="w-fumd:ll w-1/12 items-center ">
+            <img alt="..." class="max-w-full" " src=" img/ted_forTeams.png">
+          </div>
+          <div class="w-full md:w-1/2 md:px-4">
+            <div class="">
+              <h1 class="text-tedpink font-bold font-body text-xl flex">
+                SWOT analysis
+              </h1>
+              <p class="mt-4 mb-4 text-base text-secondary flex">
+                The SWOT analysis tool is an alternative technique to help inform your team’s decision making. You can
+                lead a team discussion using the SWOT tool to understand your team’s strengths and weaknesses as well as
+                the opportunities and threats your team faces.
+              </p>
+              <button
+                class="text-white font-body text-center text-sm shadow-md  bg-tedpink hover:bg-tedpink border-solid border-pink-500 hover:text-white active:bg-pink-600 font-bold  px-10 py-3 rounded-full outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                type="button">
+                SWOT analysis
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-wrap justify-center gap-8 items-center pb-10">
+          <div class="w-fumd:ll w-1/12 items-center ">
+            <img alt="..." class="max-w-full" " src=" img/ted_forTeams.png">
+          </div>
+          <div class="w-full md:w-1/2 md:px-4">
+            <div class="">
+              <h1 class="text-tedpink font-bold font-body text-xl flex">
+                Group Think
+              </h1>
+              <p class="mt-4 mb-4 text-base text-secondary flex">
+                Sometimes teams slip into Group Think , this is where the desire for group cohesion and consensus
+                prevents good decision making and problem solving, click here for a useful resource on how you can avoid
+                group think and avoid fatal flaws in group decision making.
+              </p>
+              <button
+                class="text-white font-body text-center text-sm shadow-md  bg-tedpink hover:bg-tedpink border-solid border-pink-500 hover:text-white active:bg-pink-600 font-bold  px-10 py-3 rounded-full outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                type="button">
+                Group Think
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Your Trust -->
+    <section>
+
+      <div class="z-0  bg-white relative flex flex-col min-w-0 break-words w-full mb-8">
+        <div class="container mx-auto">
+          <div class="justify-end flex flex-wrap">
+            <div class="w-full lg:w-12/12 py-5 flex justify-between pt-10">
+              <div class=" border-tedpink border-l-6 pl-5">
+                <h3 class="text-5xl font-bold uppercase font-body text-left text-secondary uppercase ">
+                  your trust
+                </h3>
+              </div>
+
+              <div class="div">
+                <img alt="..." class="max-w-full" " src=" img/company-logo.png">
+              </div>
+
+            </div>
+            <div class="">
+              <div class="grid grid-cols-2 gap-10 mb-5">
+
+                <div class="w-full pl-8 px-40">
+
+                  <p class="text-xl  text-secondary font-semibold font-body">Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p><br>
+                  <p class="text-lg  text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation.</p>
+                </div>
+
+                <div class="w-full bg-gray-50 p-8">
+
+                  <p class="text-base text-secondary text-left">Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation it enim ad minim veniam.</p>
+                  <br>
+                  <div class="grid grid-cols-2 gap-4">
+                    <div>
+                      <ul class="text-lg text-secondary uppercase font-body font-semibold list-none text-left">
+                        <li class="my-2"><a href="">LINK 1 ></a></li>
+                        <li class="my-2"><a href="">LINK 2 ></a></li>
+                        <li class="my-2"><a href="">LINK 3 ></a></li>
+                        <li class="my-2"><a href="">LINK 4 ></a></li>
+                        <li class="my-2"><a href="">LINK 5 ></a></li>
+                      </ul>
+                    </div>
+                    <div>
+                      <ul class="text-lg text-secondary uppercase font-body font-semibold list-none text-left">
+                        <li class="my-2"><a href="">LINK 6 ></a></li>
+                        <li class="my-2"><a href="">LINK 7 ></a></li>
+                        <li class="my-2"><a href="">LINK 8 ></a></li>
+                        <li class="my-2"><a href="">LINK 9 ></a></li>
+                        <li class="my-2"><a href="">LINK 10 ></a></li>
+                      </ul>
+                    </div>
+                  </div>
+
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+  </main>
+  <!-- Footer -->
+  <footer class="footer bg-white relative pt-5 pb-5  border-gray-50 border-t-2">
+    <div class="container px-4 mx-auto flex flex-wrap items-center justify-between ">
+      <div class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
+        <div class="flex-shrink-0 flex items-center">
+          <div class="flex flex-col">
+            <span class="font-body place-items-start text-secondary text-sm mb-2">2021 TED All rights reserved</span>
+          
+        </div>
+        </div>
+
+      </div>
+      <div class="lg:flex flex-grow items-center bg-white lg:bg-opacity-0 lg:shadow-none "
+        id="example-collapse-navbar">
+
+        <ul class=" flex flex-col lg:flex-row list-none lg:ml-auto items-center ">
+
+          <li class="flex items-center px-2">
+            <button
+            class="flex items-center text-sm  font-body font-bold leading-snug  text-secondary hover:opacity-50 hover:text-secondary  px-3 py-2 rounded-full"
+            type="button">
+           HELP & SUPPORT
+          </button>
+          </li>
+          <li class="flex items-center px-2">
+            <button
+            class="flex items-center text-sm  font-body font-bold leading-snug bg-tedpink text-white hover:opacity-50 hover:text-white  px-3 py-2 rounded-full"
+            type="button">
+            Back to top
+          </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+</footer>
+</body>
+
+<!-- Script -->
+<script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+<script>
+
+  /* Function for opning navbar on mobile */
+  function toggleNavbar(collapseID) {
+    document.getElementById(collapseID).classList.toggle("hidden");
+    document.getElementById(collapseID).classList.toggle("block");
+  }
+  /* Function for dropdowns */
+  function openDropdown(event, dropdownID) {
+    let element = event.target;
+    while (element.nodeName !== "A") {
+      element = element.parentNode;
+    }
+    Popper.createPopper(element, document.getElementById(dropdownID), {
+      placement: "bottom-start",
+    });
+    document.getElementById(dropdownID).classList.toggle("hidden");
+    document.getElementById(dropdownID).classList.toggle("block");
+  }
+
+
+  /* Javascript to close the radio button version by clicking it again */
+  var myRadios = document.getElementsByName('tabs2');
+  var setCheck;
+  var x = 0;
+  for (x = 0; x < myRadios.length; x++) {
+    myRadios[x].onclick = function () {
+      if (setCheck != this) {
+        setCheck = this;
+      } else {
+        this.checked = false;
+        setCheck = null;
+      }
+    };
+  }
+</script>
+
+</html>
