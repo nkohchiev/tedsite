@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/vendor/@fortawesome/fontawesome-free/css/all.min.css" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <script src="//code.jquery.com/jquery-1.12.1.min.js"></script>
+    <script src="sorttable.js"></script>
+    <title>TED - Register my Organisation</title>
+</head>
+
+<body>
+    <!-- Navigation-->
+    <header class="sticky top-0 z-50 shadow-md">
+        <nav
+            class="top-0 z-50 w-full flex flex-wrap items-start justify-between py-3 navbar-expand-lg bg-white fixed shadow-md">
+            <div class=" w-full mx-auto px-5 flex flex-wrap ">
+                <div class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
+                    <div class="flex-shrink-0 flex items-center">
+                        <img class="lg:block h-14 w-auto" src="img/logo.svg" alt="Workflow">
+                    </div>
+                    <button
+                        class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+                        type="button" onclick="toggleNavbar('example-collapse-navbar')">
+                        <i class="text-secondary fas fa-bars"></i>
+                    </button>
+                </div>
+                <div class="lg:flex flex-grow items-center bg-white lg:bg-opacity-0 lg:shadow-none hidden"
+                    id="example-collapse-navbar">
+                    <ul class=" flex flex-col lg:flex-row list-none lg:ml-auto items-center">
+                        <li class="inline-block relative">
+                            <a class="px-8 py-2 flex items-center text-sm uppercase font-body font-semibold leading-snug text-secondary hover:opacity-75 hover:bg-secondary hover:text-white px-3 py-2 rounded-full"
+                                href="#pablo" onclick="openDropdown(event,'demo-pages-dropdown')">
+                                Development content
+                            </a>
+                            <div class="hidden bg-white text-base z-50 float-left py-2 list-none text-left rounded shadow-lg min-w-48"
+                                id="demo-pages-dropdown">
+                                <a href="#"
+                                    class="text-sm py-3 px-4 font-body block w-full whitespace-nowrap bg-transparent text-blueGray-700">
+                                    Drop item 1
+                                </a>
+                                <a href="#"
+                                    class="text-sm py-2 px-4 font-body block w-full whitespace-nowrap bg-transparent text-blueGray-700">
+                                    Drop item 2
+                                </a>
+                                <a href="#"
+                                    class="text-sm py-2 px-4 font-body block w-full whitespace-nowrap bg-transparent text-blueGray-700">
+                                    Drop item 3
+                                </a>
+                                <a href="#"
+                                    class="text-sm py-2 px-4 font-body block w-full whitespace-nowrap bg-transparent text-blueGray-700">
+                                    Drop item 4
+                                </a>
+                            </div>
+                        </li>
+                        <li class="flex items-center">
+                            <button
+                                class="px-8 py-2 flex items-center text-sm uppercase font-body font-semibold leading-snug text-secondary hover:opacity-75 hover:bg-secondary hover:text-white px-3 py-2 rounded-full"
+                                type="button">
+                                About TED
+                            </button>
+                        </li>
+                        <li class="flex items-center">
+                            <button
+                                class="px-8 py-2 flex items-center text-sm uppercase font-body font-semibold leading-snug text-secondary hover:opacity-75 hover:bg-secondary hover:text-white px-3 py-2 rounded-full"
+                                type="button">
+                                Log out
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main content -->
+    <main class="overflow-hidden">
+        <!-- Intro -->
+        <section class="mt-20">
+            <div class="flex bg-white w-full z-0 ">
+
+                <div class="mt-20 mb-10 w-full sm:w-full jus">
+                    <div class="sm:ml-0 px-10 lg:px-20">
+                        <h3
+                            class="text-3xl leading-none lg:text-5 xl md:text-4xl font-extrabold font-body text-center text-secondary tracking-wider uppercase">
+                            Register my Organisation
+                        </h3>
+                        <br>
+                        <h3 class="text-tedblueDark font-body font-normal text-xl text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae lacus nibh. Vestibulum vehicula orci ut mauris eleifend pharetra. Donec dignissim semper arcu, id iaculis odio euismod vel. Vivamus congue felis at nulla consectetur euismod. Donec finibus eu nunc aliquet efficitur. Fusce faucibus vel sem id eleifend. Pellentesque vitae erat mollis, porttitor turpis eu, placerat quam. Sed ante augue, viverra vitae elit nec, tempus dictum dolor. Integer ligula ante, ullamcorper sit amet dignissim at, scelerisque sit amet felis. </h3>
+                        <br>
+
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="justify-center flex flex-wrap bg-tedgray">
+            <div class="container mx-auto ">
+                <div class="w-full lg:w-1/2 mx-auto my-10 bg-white p-5 rounded-md shadow-md ">
+                    <div class="text-center">
+                        <h1 class="my-3 text-3xl font-semibold font-body text-tedblueDark ">Register my Organisation</h1>
+                        <p class="text-gray-400 font-body dark:text-gray-400">Complete the form and someone will be in touch.</p>
+                    </div>
+                    <div class="m-7 ">
+                        <form action="https://api.web3forms.com/submit" method="POST" id="form">
+        
+                            <input type="hidden" name="apikey" value="YOUR_ACCESS_KEY_HERE">
+                            <input type="hidden" name="subject" value="New Submission from Web3Forms">
+                            <input type="checkbox" name="botcheck" id="" style="display: none;">
+        
+        
+                            <div class="mb-6">
+                                <label for="name" class="block mb-2 text-base-custom text-tedblueDark font-body ">Full Name</label>
+                                <input type="text" name="name" id="name" placeholder="Ian Marshall" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
+                            </div>
+                            <div class="mb-6">
+                                <label for="organisation" class="block mb-2 text-base-custom text-tedblueDark font-body ">Organisation</label>
+                                <input type="text" name="organisation" id="organisation" placeholder="NHS" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
+                            </div>
+                            <div class="mb-6">
+                                <label for="email" class="block mb-2 text-base-custom text-tedblueDark font-body ">Email Address</label>
+                                <input type="email" name="email" id="email" placeholder="you@company.com" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
+                            </div>
+                            <div class="mb-6">
+        
+                                <label for="phone" class="text-base-custom text-tedblueDark font-body ">Phone Number</label>
+                                <input type="text" name="phone" id="phone" placeholder="01423 799300" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
+                            </div>
+                            <div class="mb-6">
+                                <label for="message" class="block mb-2 text-base-custom text-tedblueDark font-body ">Your Message</label>
+        
+                                <textarea rows="5" name="message" id="message" placeholder="Your Message" class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" required></textarea>
+                            </div>
+                            <div class="mb-6">
+                                <button type="submit" class="w-full px-3 py-4 font-body text-white bg-tedblueDark rounded-md focus:bg-tedblueDark hover:bg-tedblue300 focus:outline-none">Submit</button>
+                            </div>
+                            <p class="text-base text-center text-gray-400" id="result">
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+</div>
+
+
+    <!-- Footer -->
+    <footer class="footer bg-white relative pt-5 pb-5  border-gray-50 border-t-2">
+        <div class="container px-4 mx-auto flex flex-wrap items-center justify-between ">
+            <div class="w-full relative flex justify-center lg:w-auto lg:static lg:block lg:justify-start">
+                <div class="flex-shrink-0 flex items-center">
+                    <div class="flex flex-col">
+                        <span class="font-body place-items-start text-secondary text-sm mb-2">2021 TED All rights
+                            reserved</span>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="lg:flex flex-grow items-center bg-white lg:bg-opacity-0 lg:shadow-none "
+                id="example-collapse-navbar">
+
+                <ul class=" flex flex-col lg:flex-row list-none lg:ml-auto items-center ">
+
+                    <li class="flex items-center px-2">
+                        <button
+                            class="flex items-center text-sm  font-body font-bold leading-snug  text-secondary hover:opacity-50 hover:text-secondary  px-3 py-2 rounded-full"
+                            type="button">
+                            HELP & SUPPORT
+                        </button>
+                    </li>
+                    <li class="flex items-center px-2">
+                        <button
+                            class="flex items-center text-sm  font-body font-bold leading-snug bg-tedpink text-white hover:opacity-50 hover:text-white  px-3 py-2 rounded-full"
+                            type="button">
+                            Back to top
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<!-- Script -->
+<script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+<script>
+
+    /* Function for opning navbar on mobile */
+    function toggleNavbar(collapseID) {
+        document.getElementById(collapseID).classList.toggle("hidden");
+        document.getElementById(collapseID).classList.toggle("block");
+    }
+    /* Function for dropdowns */
+    function openDropdown(event, dropdownID) {
+        let element = event.target;
+        while (element.nodeName !== "A") {
+            element = element.parentNode;
+        }
+        Popper.createPopper(element, document.getElementById(dropdownID), {
+            placement: "bottom-start",
+        });
+        document.getElementById(dropdownID).classList.toggle("hidden");
+        document.getElementById(dropdownID).classList.toggle("block");
+    }
+
+
+    /* Javascript to close the radio button version by clicking it again */
+    var myRadios = document.getElementsByName('tabs2');
+    var setCheck;
+    var x = 0;
+    for (x = 0; x < myRadios.length; x++) {
+        myRadios[x].onclick = function () {
+            if (setCheck != this) {
+                setCheck = this;
+            } else {
+                this.checked = false;
+                setCheck = null;
+            }
+        };
+    }
+
+
+    // Submit Form
+    const form = document.getElementById('form');
+const result = document.getElementById('result');
+
+form.addEventListener('submit', function(e) {
+    const formData = new FormData(form);
+    e.preventDefault();
+    var object = {};
+    formData.forEach((value, key) => {
+        object[key] = value
+    });
+    var json = JSON.stringify(object);
+    result.innerHTML = "Please wait..."
+
+    fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: json
+        })
+        .then(async (response) => {
+            let json = await response.json();
+            if (response.status == 200) {
+                result.innerHTML = json.message;
+                 result.classList.remove('text-gray-500');
+                result.classList.add('text-green-500');
+            } else {
+                console.log(response);
+                result.innerHTML = json.message;
+                 result.classList.remove('text-gray-500');
+                 result.classList.add('text-red-500');
+            }
+        })
+        .catch(error => {
+            console.log(error);
+            result.innerHTML = "Something went wrong!";
+        })
+        .then(function() {
+            form.reset();
+            setTimeout(() => {
+                result.style.display = "none"; 
+            }, 5000);
+        });
+})
+
+</script>
+
+</html>
+

@@ -8,15 +8,23 @@
   <link rel="stylesheet" href="../public/vendor/@fortawesome/fontawesome-free/css/all.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
     integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
-    crossorigin="anonymous" />
+    scrossorigin="anonymous" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.21/jquery.scrollify.min.js"
+    integrity="sha512-UyX8JsMsNRW1cYl8BoxpcamonpwU2y7mSTsN0Z52plp7oKo1u92Xqfpv6lOlTyH3yiMXK+gU1jw0DVCsPTfKew=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
   <link rel="stylesheet" href="styles.css">
-  <title>TED</title>
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/7.4.1/smooth-scrollbar.css"> -->
+  <title>TED - Homepage</title>
 
 
 </head>
 
 <body>
-
   <!-- Navigation-->
   <header class="sticky top-0 z-50 shadow-md">
     <nav
@@ -24,11 +32,10 @@
       <div class=" w-full mx-auto px-5 flex flex-wrap ">
         <div class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
           <div class="flex-shrink-0 flex items-center">
-           
-            <img class="hidden lg:block h-14 w-auto" src="img/logo.svg" alt="Workflow">
+            <img class="lg:block h-14 w-auto" src="img/logo.svg" alt="Workflow">
           </div>
           <button
-            class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+            class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent  block lg:hidden outline-none focus:outline-none"
             type="button" onclick="toggleNavbar('example-collapse-navbar')">
             <i class="text-secondary fas fa-bars"></i>
           </button>
@@ -80,25 +87,24 @@
       </div>
     </nav>
   </header>
-
   <!-- Main content -->
-  <main class="relative bg-tedgray ">
+  <main class="overflow-hidden bg-tedgray" id="#my-scrollbar">
     <!-- Intro section -->
     <div>
-      <div class="bg-tedgray">
-        <div class="w-full  h-screen relative">
-          <img class="absolute inset-0 h-full w-full object-cover" data-aos-easing="ease-in"
+      <div class="bg-tedgray example-classname">
+        <div class="w-full  h-screen relative bg-tedblueDark">
+          <img class="absolute inset-0 h-full w-full object-cover invisible md:visible" data-aos-easing="ease-in"
             src="img/careersinursing.png" alt="">
           <div class="flex h-full content-between items-center justify-center relative ">
-            <div class="bg-auto bg-no-repeat bg-center m-8 pt-40">
-              <img class="object-scale-down h-52 w-full p-8" src="img/LOGO 2@2x.png" data-aos="fade-up"
+            <div class="bg-auto bg-no-repeat bg-center m-8 pt-10 ">
+              <img class="object-scale-down h-60 w-full p-8 " src="img/LOGO 2@2x.png" data-aos="fade-up"
                 data-aos-anchor-placement="center-bottom" alt="">
-              <h1 class="text-6xl font-light text-center text-white tracking-normal" data-aos="fade-in"
-                data-aos-easing="ease-in">EMPOWERING TEAMS</h1>
-              <h1 class="text-7xl font-bold font-body text-center text-white " data-aos="fade-in"
-                data-aos-easing="ease-in">TO ACHIEVE
+              <h1 class="text-4xl sm:text-4xl md:text-5xl lg:text-6xl font-light text-center text-white tracking-normal"
+                data-aos="fade-in" data-aos-easing="ease-in">EMPOWERING TEAMS</h1>
+              <h1 class="text-4xl sm:text-4xl md:text-6xl lg:text-7xl font-bold font-body text-center text-white "
+                data-aos="fade-in" data-aos-easing="ease-in">TO ACHIEVE
                 GREATNESS</h1>
-              <h3 class="text-1xl font-light text-center text-white mt-40 " data-aos="fade-in"
+              <h3 class="text-2xl font-light text-center text-white mt-20  " data-aos="fade-in"
                 data-aos-easing="ease-in">SCROLL DOWN
                 <span class="text-5xl flex justify-center " style=" color: white;">
                   <i class="fas fa-caret-down"></i>
@@ -111,26 +117,22 @@
       </div>
     </div>
     <!-- About TED section -->
-    <section class="pb-20 mt-20 bg-tedgray max-w-7xl mx-auto px-8 mb-8">
-
-
-      <div class="md:flex content-center flex-wrap ">
-
+    <section class="md:pb-20 sm:mt-20 lg:mt-20 bg-tedgray max-w-7xl mx-auto lg:px-8 ">
+      <div class="md:flex content-center flex-wrap example-classname ">
         <div class="flex flex-wrap md:flex">
-          <div class="w-full md:w-4/12 ">
-            <div class="relative z-0 flex flex-col  min-w-0 break-words  w-full mb-6 shadow-lg  bg-secondary">
-
+          <div class="w-full md:w-4/12 bg-secondary ">
+            <div class="relative z-0 flex flex-col  min-w-0 break-words  w-full md:mb-6   bg-secondary">
               <img alt="..." src="img/nhsGroup.jpg" class="w-full align-middle " />
               <hr class="h-2 border-white bg-white">
-              <div class="container max-w-screen-lg mx-auto pb-10  w-24 h-20 rounded-full relative z-10 -mt-10">
+              <div class="container max-w-screen-lg mx-auto pb-10  w-28 h-24 rounded-full relative z-10 -mt-10">
                 <img alt="..." src="img/personIcon.png" class="w-full align-middle " />
               </div>
               <blockquote class="relative p-8 mb-4">
                 <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95"
                   class="absolute left-0 w-full block h-95-px -top-94-px">
                 </svg>
-                <div class="font-body text-white text-center text-3xl ">
-                  <h5 class="font-bold text-5xl">TED</h5>
+                <div class="font-body text-white text-center text-3xl">
+                  <h5 class="font-bold text-5xl ">TED</h5>
                   <h5 class="font-thin">FOR ORGANISATIONS</h5>
                   <ul class="md:list-none mt-1 text-base ">
                     <li class="py-2">A standardised approach to measuring engagement</li>
@@ -141,11 +143,11 @@
               </blockquote>
             </div>
           </div>
-          <div class="w-full md:w-4/12 ">
-            <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg  bg-tedpink">
+          <div class="w-full md:w-4/12 bg-tedpink">
+            <div class="relative flex flex-col min-w-0 break-words bg-white w-full md:mb-6  bg-tedpink">
               <img alt="..." src="img/nhslady.jpg" class="w-full align-middle " />
               <hr class="h-2 border-white bg-white">
-              <div class="container max-w-screen-lg mx-auto pb-10  w-24 h-20 rounded-full relative z-10 -mt-10">
+              <div class="container max-w-screen-lg mx-auto pb-10  w-28 h-24 rounded-full relative z-10 -mt-10">
                 <img alt="..." src="img/personIcon.png" class="w-full align-middle " />
               </div>
               <blockquote class="relative p-8 mb-4">
@@ -165,11 +167,11 @@
               </blockquote>
             </div>
           </div>
-          <div class="w-full md:w-4/12 flex-col ">
-            <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg  bg-secondary">
+          <div class="w-full md:w-4/12 flex-col bg-secondary ">
+            <div class="relative flex flex-col min-w-0 break-words bg-white w-full md:mb-6 bg-secondary">
               <img alt="..." src="img/nhsnurses.jpg" class="w-full align-middle g" />
               <hr class="h-2 border-white bg-white">
-              <div class="container max-w-screen-lg mx-auto pb-10  w-24 h-20 rounded-full relative z-10 -mt-10">
+              <div class="container max-w-screen-lg mx-auto pb-10  w-28 h-24 rounded-full relative z-10 -mt-10">
                 <img alt="..." src="img/personsIcon.png" class="w-full align-middle " />
               </div>
               <blockquote class="relative p-8 mb-4">
@@ -183,8 +185,8 @@
                   <ul class="md:list-none mt-1 text-base ">
                     <li class="py-2">Empowering individuals to have a voice</li>
                     <li class="py-2">Placing team members at the centre of decision making</li>
-                    <li class="py-2"></li>
-                    
+                    <li class="py-2"><br></li>
+
                   </ul>
                 </div>
               </blockquote>
@@ -193,34 +195,35 @@
         </div>
       </div>
     </section>
+    <!-- TED Journey -->
+    <section class=" bg-white example-classname">
+      <section class="bg-white pb-10 ">
 
-
-    <!-- Section divider -->
-    <section class="bg-white">
-      <div class="bg-tedpink text-white text-center py-5 font-light text-xl ">
-        <h1> SELECT THE ICONS BELOW</h1>
-      </div>
-      <span class="text-5xl flex justify-center text-tedpink -mt-6">
-        <i class="fas fa-caret-down"></i>
-      </span>
-    </section>
-
-    <!-- Interactive Accordion -->
-    <section class="p-10 bg-white">
-      <div class="w-full md:w-3/5 mx-auto p-8 font-body text-center font-bold  -my-20">
-        <p class="font-body text-lg text-secondary  ">IDENTIFY WHO IS IN YOUR TEAM</p>
-        <hr class="border-solid border-t-4 border-tedpink w-10 mx-auto">
-      </div>
-      <div class="flex items-center justify-center h-screen -my-22">
-        <div id="parentdiv" class="relative bg-secondary rounded-full mx-auto w-60 h-60 border-16 border-tedpink  ">
-          <div class="flex justify-center mt-16">
-            <h1 class="innerCircle1 text-white text-center font-body text-3xl font-bold">TED <br> JOURNEY</h1>
-          </div>
+        <div class="bg-tedpink text-white text-center py-5 text-base-custom  ">
+          <h1> SELECT THE ICONS BELOW</h1>
         </div>
+        <span class="text-5xl flex justify-center text-tedpink -mt-6">
+          <i class="fas fa-caret-down"></i>
+        </span>
+        
+      <div class="flex items-center justify-center py-40 relative z-2 flex-col " >
+       
+        <div id="titles" >
+          <div id="bgcircle" ></div>
+        </div>
+        <div id="parentdiv"
+          class="relative bg-secondary rounded-full mx-auto w-64 h-64 border-lg border-tedpink z-10 relative">
 
+          <div class="flex justify-center h-24 font-body font-bold text-center text-2xl text-white my-20 relative">
+            <h1>TED JOURNEY</h1>
+            
+          </div>
+
+        </div>
+        
         <!--Modal-->
         <div
-          class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center">
+          class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center z-20">
           <div class="modal-overlay absolute w-full h-full bg-white opacity-90"></div>
 
           <div class="modal-container bg-white w-11/12 md:max-w-md mx-auto rounded shadow-lg z-50 overflow-y-auto">
@@ -236,62 +239,74 @@
               <span class="text-sm">(Esc)</span>
             </div>
 
-            <!-- Add margin if you want to see some of the overlay behind the modal-->
+
+            <!-- Modal-->
+
+            <div class="modal-close cursor-pointer z-50 flex justify-end bg-white bg-opacity-0">
+              <p class="bg-tedpink   font-body text-lg uppercase font-semibold px-2 text-white">Close</p>
+              <svg class="fill-current bg-tedpink text-white " xmlns="http://www.w3.org/2000/svg" width="24" height="32"
+                viewBox="0 0 18 18">
+                <path
+                  d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z">
+                </path>
+
+              </svg>
+            </div>
             <div class="modal-content  text-center border-2 border-tedgray">
               <!--Title-->
-              <div class="flex justify-between items-left  ">
-                <div class="flex justify-center h-32  ">
-                <img class="" src="img/tedJicon.png" alt="" srcset="">
-              </div>
-                <p class="text-2xl text-left font-bold font-body text-tedblueDark uppercase my-auto "> Confirm what you<br> hope to achieve</p>
-                <div class="modal-close cursor-pointer z-50">
-                 
-                  <svg class="fill-current bg-tedpink text-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                    viewBox="0 0 18 18">
-                    <path
-                      d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z">
-                    </path>
-                  </svg>
+
+              <div class="flex justify-end flex-col-2 my-1 px-5">
+                <div class="flex h-full relative top-5">
+                  <img class="" src="img/tedJicon.png" alt="" srcset="">
                 </div>
+
+                <p class="text-2xl text-left font-bold font-body text-tedblueDark uppercase my-auto px-5 "> Confirm what
+                  you hope to achieve</p>
+
               </div>
 
               <!--Body-->
               <div class="bg-secondary text-white text-center font-body text-base my-auto px-6 py-6">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat.
-                <br> <br>
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                lada laborum.</p>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                  et
+                  dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip
+                  ex ea commodo consequat.
+                  <br> <br>
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                  lada laborum.
+                </p>
               </div>
 
             </div>
           </div>
         </div>
       </div>
-
-
+    </section>
     </section>
     <!-- Statistics -->
-    <section class="pb-20 bg-tedgray">
+    <section class="sm:pb-5 md:pb-10 lg:pb-20 bg-tedgray example-classname">
 
-      <div class="container mx-auto px-8 bg">
+      <div class="container mx-auto px-8 bg  ">
 
         <div class="text-secondary font-body font-bold text-6xl uppercase lg:pt-12 pt-6 text-center tracking-wide">
           <h2>Statistics</h2>
         </div>
-        <div class="text-secondary font-body text-1xl lg:pt-6 pt-2 text-center lg:mx-52 sm:mx-10">
-          <h3 class="mx-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+        <div class="text-secondary font-body text-1xl sm:text-lg lg:pt-6 pt-2 text-center lg:mx-52 sm:mx-10 ">
+          <h3 class="md:mx-20 lg:mx-20 xl:mx-40">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et
+
             dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
             ea commodo consequat.</h3>
         </div>
 
       </div>
-      <div class="md:flex content-center flex-wrap mx-60 p-3">
-        <div class="md:flex md:w-1/2 lg:w-1/3 px-2 py-2">
-          <div class="md:flex-1 shadow-lg bg-white">
-            <div class="md:flex-1  border-tedblue bg-tedgray border-b-16  border-t-16">
+      <div class=" lg:flex content-center flex-wrap sm:mx-10 md:mx-60 lg:mx-40 xl:mx-80 p-3">
+        <div class="lg:w-1/3 px-2 py-2">
+          <div class=" shadow-lg bg-white">
+            <div class="border-tedblue bg-tedgray border-b-16  border-t-16">
               <div class="px-5 py-8 flex-auto">
                 <h6 class="text-7xl font-semibold font-body text-center text-tedblue uppercase">07
                 </h6>
@@ -304,9 +319,9 @@
             </div>
           </div>
         </div>
-        <div class="md:flex md:w-1/2 lg:w-1/3 px-2 py-2">
-          <div class="md:flex-1 shadow-lg bg-white">
-            <div class="md:flex-1  border-tedpink bg-tedgray border-b-16  border-t-16">
+        <div class="lg:w-1/3 px-2 py-2">
+          <div class="shadow-lg bg-white">
+            <div class="  border-tedpink bg-tedgray border-b-16  border-t-16">
               <div class="px-5 py-8 flex-auto">
                 <h6 class="text-7xl font-semibold font-body text-center text-tedpink  uppercase">523
                 </h6>
@@ -319,9 +334,9 @@
             </div>
           </div>
         </div>
-        <div class="md:flex md:w-1/2 lg:w-1/3 px-2 py-2">
-          <div class="md:flex-1 shadow-lg bg-white">
-            <div class="md:flex-1  border-tedgreen bg-tedgray border-b-16  border-t-16">
+        <div class="lg:w-1/3 px-2 py-2">
+          <div class="shadow-lg bg-white">
+            <div class="border-tedgreen bg-tedgray border-b-16  border-t-16">
               <div class="px-5 py-8 flex-auto">
                 <h6 class="text-7xl font-semibold font-body text-center text-tedgreen uppercase">1,245
                 </h6>
@@ -338,63 +353,103 @@
     </section>
   </main>
   <!-- Footer -->
-  <footer class="footer bg-white relative pt-5 pb-5  ">
-    <div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
-      <div class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
+  <footer class="footer bg-white relative pt-5 pb-5 h-100">
+    <div class="footer container px-4 mx-auto flex flex-wrap items-center justify-between">
+      <div class="w-full relative flex justify-center lg:w-auto lg:static lg:block lg:justify-start">
         <div class="flex-shrink-0 flex items-center">
           <div class="flex flex-col">
             <span class="font-body place-items-start text-secondary text-sm mb-2">2021 TED All rights reserved</span>
-          
+          </div>
         </div>
-        </div>
-
       </div>
-      <div class="lg:flex flex-grow items-center bg-white lg:bg-opacity-0 lg:shadow-none "
-        id="example-collapse-navbar">
-
-        <ul class=" flex flex-col lg:flex-row list-none lg:ml-auto items-center ">
-
+      <div class="lg:flex flex-grow items-center bg-white lg:bg-opacity-0 lg:shadow-none " id="example-collapse-navbar">
+        <ul class=" flex flex-col lg:flex-row list-none gap-2 lg:ml-auto items-center ">
           <li class="flex items-center px-2">
             <button
-            class="flex items-center text-sm  font-body font-bold leading-snug bg-secondary text-white hover:opacity-50 hover:text-white  px-3 py-2 rounded-full"
-            type="button">
-            Register my Organisation
-          </button>
+              class="flex items-center sm:text-lg  lg:text-sm font-body font-bold leading-snug bg-secondary text-white hover:opacity-50 hover:text-white  px-3 py-2 rounded-full"
+              type="button">
+              Register my Organisation
+            </button>
           </li>
           <li class="flex items-center px-2">
             <button
-            class="flex items-center text-sm  font-body font-bold leading-snug bg-tedpink text-white hover:opacity-50 hover:text-white  px-3 py-2 rounded-full"
-            type="button">
-            Back to top
-          </button>
+              class="flex items-center sm:text-lg  lg:text-sm  font-body font-bold leading-snug bg-tedpink text-white hover:opacity-50 hover:text-white  px-3 py-2 rounded-full"
+              type="button">
+              Back to top
+            </button>
           </li>
         </ul>
       </div>
     </div>
-</footer>
+  </footer>
 </body>
 <!-- Script -->
+<script>
+  $(function () {
+    $.scrollify({
+      section: ".example-classname",
+      interstitialSection: ".footer",
+      easing: "easeOutExpo",
+      scrollSpeed: 2000,
+      offset: -100,
+      scrollbars: true,
+      setHeights: true,
+      standardScrollElements: "",
+      overflowScroll: true,
+
+
+
+    });
+  });
+</script>
 <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+<script src="index.js"></script>
 <script>
 
+// TED JOURNEY CIRCLES
+var titles = [
+    ['RUN YOUR DIAGNOSTIC', 'right'],
+    ['ACCESS TED SUPPORT', 'bottom'],
+    ['TEAM DEVELOPMENT WORKSHOP', 'left'],
+    ['REVIEW FEEDBACK AND DIAGNOSTIC', 'left'],
+    ['EVALUATION AND ACTION PLANNING', 'left'],
+    ['IDENTIFY WHO IS IN YOUR TEAM', 'top'],
+    ['CONFIRM WHAT YOU HOPE TO ACHIEVE', 'right'],
+    ['REGISTER THE TEAM WITH TED', 'right']
+]
 
-  // TED JOURNEY CIRCLES
-  var div = 360 / 8;
-  var radius = 200;
-  var parentdiv = document.getElementById('parentdiv');
-  var offsetToParentCenter = parseInt(parentdiv.offsetWidth / 2); //assumes parent is square
-  var offsetToChildCenter = 45;
-  var totalOffset = offsetToParentCenter - offsetToChildCenter;
-  for (var i = 1; i <= 8; ++i) {
-    var childdiv = document.createElement('button');
-    childdiv.className = 'modal-open innerCircle';
-    childdiv.style.position = 'absolute';
-    var y = Math.sin((div * i) * (Math.PI / 180)) * radius;
-    var x = Math.cos((div * i) * (Math.PI / 180)) * radius;
-    childdiv.style.top = (y + totalOffset).toString() + "px";
-    childdiv.style.left = (x + totalOffset).toString() + "px";
-    parentdiv.appendChild(childdiv);
-  }
+var div = 360 / 8;
+var radius = 200;
+var parentdiv = document.getElementById('parentdiv');
+var offsetToParentCenter = parseInt(parentdiv.offsetWidth / 2);
+var offsetToChildCenter = 70;
+var totalOffset = offsetToParentCenter - offsetToChildCenter;
+
+for (var i = 0; i < titles.length; i++) {
+	//create circle
+    var circle = document.createElement('button');
+    circle.className = 'modal-open innerCircle';
+    circle.style.position = 'absolute';
+    var y = Math.sin((div * (i+1)) * (Math.PI / 180)) * radius;
+    var x = Math.cos((div * (i+1)) * (Math.PI / 180)) * radius;
+    circle.style.top = (y + totalOffset).toString() + "px";
+    circle.style.left = (x + totalOffset).toString() + "px";
+
+    //add text
+    var text = titles[i][0];
+    var titleElement = document.createElement('h3');
+    titleElement.classList.add('title');
+    titleElement.classList.add(titles[i][1]);
+    titleElement.innerHTML = text;
+    // titleElement.style.position = 'relative';
+
+    //add title to circle
+    circle.appendChild(titleElement);
+
+    //add circle to div
+    parentdiv.appendChild(circle);
+}
+
 
   // Modal
   var openmodal = document.querySelectorAll('.modal-open')
@@ -471,6 +526,8 @@
       }
     };
   }
+
+
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
   integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
@@ -484,5 +541,110 @@
     }
   )
 </script>
+
+<style>
+
+
+
+  #bgcircle {
+    height: 425px;
+    width: 425px;
+    background-image: url("img/circleLine.png") ;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    position: absolute;
+    z-index: 2;
+    transform: translate(-50%,-20%);
+  }
+
+  .title {
+      position: absolute;
+      padding: 1px 25px 0px 15px;
+      color: #203684;
+      font-weight: 800;
+      font-family: 'Calibri';
+      
+  }
+  
+
+  
+  .title.top {
+      top: -50px;
+      transform: translateX(-20%);
+      text-align: center;
+      width: 400px;
+      right: -240px;
+      
+  }
+  .title.top:after {
+      content: '';
+      background-color: #B04389;
+      position: absolute;
+      width: 50px;
+      height: 5px;
+      bottom: -10px;
+      left: 200px;
+      transform: translateX(-50%);
+  }
+  
+  .title.right {
+      transform: translateY(-50%);
+      text-align: left;
+      right: -300px;
+      left: 100px;
+      width: 190px;
+      
+      
+  }
+
+
+  .title.right:before {
+      content: '';
+      background-color: #B04389;
+      position: absolute;
+      height: 50px;
+      width: 5px;
+      left: 0;
+      bottom: -25px;
+      transform: translateY(-50%);
+  }
+  
+  .title.bottom {
+      bottom: -100px;
+      transform: translateX(-35%);
+      text-align: center;
+      width: 400px;
+      right: -300px;
+      top: 100px;
+      
+  }
+  .title.bottom:after {
+      content: '';
+      background-color: #B04389;
+      position: absolute;
+      width: 50px;
+      height: 5px;
+      top: -10px;
+      transform: translateX(-50%);
+      left: 200px;
+  }
+  
+  .title.left {
+      transform: translateY(-50%);
+      text-align: right;
+      left: -280px;
+      width: 260px;
+  }
+  .title.left:before {
+      content: '';
+      background-color: #B04389;
+      position: absolute;
+      height: 50px;
+      width: 5px;
+      right: 0;
+      bottom: -25px;
+      transform: translateY(-50%);
+  }
+  </style>
 
 </html>

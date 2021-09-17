@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/vendor/@fortawesome/fontawesome-free/css/all.min.css" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <title>TED - Working Together</title>
+</head>
+
+<body>
+    <!-- Navigation-->
+    <header class="sticky top-0 z-50 shadow-md">
+        <nav
+            class="top-0 z-50 w-full flex flex-wrap items-start justify-between py-3 navbar-expand-lg bg-white fixed shadow-md">
+            <div class=" w-full mx-auto px-5 flex flex-wrap ">
+                <div class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
+                    <div class="flex-shrink-0 flex items-center">
+                        <img class="lg:block h-14 w-auto" src="img/logo.svg" alt="Workflow">
+                    </div>
+                    <button
+                        class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+                        type="button" onclick="toggleNavbar('example-collapse-navbar')">
+                        <i class="text-secondary fas fa-bars"></i>
+                    </button>
+                </div>
+                <div class="lg:flex flex-grow items-center bg-white lg:bg-opacity-0 lg:shadow-none hidden"
+                    id="example-collapse-navbar">
+                    <ul class=" flex flex-col lg:flex-row list-none lg:ml-auto items-center">
+                        <li class="inline-block relative">
+                            <a class="px-8 py-2 flex items-center text-sm uppercase font-body font-semibold leading-snug text-secondary hover:opacity-75 hover:bg-secondary hover:text-white px-3 py-2 rounded-full"
+                                href="#pablo" onclick="openDropdown(event,'demo-pages-dropdown')">
+                                Development content
+                            </a>
+                            <div class="hidden bg-white text-base z-50 float-left py-2 list-none text-left rounded shadow-lg min-w-48"
+                                id="demo-pages-dropdown">
+                                <a href="#"
+                                    class="text-sm py-3 px-4 font-body block w-full whitespace-nowrap bg-transparent text-blueGray-700">
+                                    Drop item 1
+                                </a>
+                                <a href="#"
+                                    class="text-sm py-2 px-4 font-body block w-full whitespace-nowrap bg-transparent text-blueGray-700">
+                                    Drop item 2
+                                </a>
+                                <a href="#"
+                                    class="text-sm py-2 px-4 font-body block w-full whitespace-nowrap bg-transparent text-blueGray-700">
+                                    Drop item 3
+                                </a>
+                                <a href="#"
+                                    class="text-sm py-2 px-4 font-body block w-full whitespace-nowrap bg-transparent text-blueGray-700">
+                                    Drop item 4
+                                </a>
+                            </div>
+                        </li>
+                        <li class="flex items-center">
+                            <button
+                                class="px-8 py-2 flex items-center text-sm uppercase font-body font-semibold leading-snug text-secondary hover:opacity-75 hover:bg-secondary hover:text-white px-3 py-2 rounded-full"
+                                type="button">
+                                About TED
+                            </button>
+                        </li>
+                        <li class="flex items-center">
+                            <button
+                                class="px-8 py-2 flex items-center text-sm uppercase font-body font-semibold leading-snug text-secondary hover:opacity-75 hover:bg-secondary hover:text-white px-3 py-2 rounded-full"
+                                type="button">
+                                Log out
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+                <!-- Sidebar -->
+                <div
+                class="fixed flex flex-col top-14 left-0 w-14 hover:w-64 md:w-64 bg-tedblueDark dark:bg-gray-900 h-full text-white transition-all duration-300 border-none z-10 sidebar mr-5 ">
+                <div
+                    class="overflow-y-auto overflow-x-hidden flex flex-col justify-between flex-grow scrollbar-none scrollbar-thumb-tedblueDark scrollbar-track-white h-32 overflow-y-scroll  ">
+                    <ul class="flex flex-col py-4 space-y-1 font-body ">
+                        <li class="px-5 hidden md:block">
+                            <div class="flex flex-row items-center h-8">
+                                <div class="text-sm font-light tracking-wide text-gray-400 uppercase"></div>
+                            </div>
+                        </li>
+                        <li>
+        
+
+                <li>
+                    <a href="public/dashboard.html" target="_blank"
+                        class="relative flex flex-row items-center h-11 focus:outline-none hover:bg-tedpink text-white hover:text-white border-l-4 border-transparent pr-6">
+                        <span class="inline-flex justify-center items-center ml-4">
+                            <i class="fas fa-home"></i>
+                        </span>
+                        <span class="ml-2 text-sm tracking-wide truncate">TED DASHBOARD</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="devcontent.html" target="_blank"
+                        class="relative flex flex-row items-center h-11 focus:outline-none hover:bg-tedpink text-white hover:text-white border-l-4 border-transparent pr-6">
+                        <span class="inline-flex justify-center items-center ml-4">
+                          <i class="fas fa-sitemap"></i>
+                        </span>
+                        <span class="ml-2 text-sm tracking-wide truncate">DEVELOPMENT CONTENT</span>
+                    </a>
+                </li>
+        
+                <li class="px-5 hidden md:block">
+                    <div class="flex flex-row items-center mt-5 h-8">
+                        <div class="text-sm font-light tracking-wide text-white uppercase">QUICK LINKS:</div>
+                    </div>
+                </li>
+                <li >
+                    <a  href="teamcom.html" target="_blank"
+                        class=" relative flex flex-row items-center h-11 focus:outline-none  hover:bg-tedpink  text-white hover:text-white border-l-4 border-transparent pr-6">
+                        <span class="inline-flex justify-center items-center ml-4">
+                          <span class='icon-tm'></span>
+                        </span>
+                        <span class="ml-2 text-sm tracking-wide truncate">Team Communication</span>
+
+         
+                    </a>
+                </li>
+                <li>
+                
+                    <a href="workingwithothers.html" target="_blank"
+                        class="relative flex flex-row items-center h-11 focus:outline-none hover:bg-tedpink  text-white hover:text-white border-l-4 border-transparent pr-6">
+                        <span class="inline-flex justify-center items-center ml-4">
+                          <span class='icon-wo'></span>
+                        </span>
+                        <span class="ml-2 text-sm tracking-wide truncate">Working With Other Teams</span>
+                    </a>
+                </li>
+                                
+                <li>
+                    <a href="teampurpose.html" target="_blank"
+                        class="relative flex flex-row items-center h-11 focus:outline-none hover:bg-tedpink  text-white hover:text-white border-l-4 border-transparent pr-6">
+                        <span class="inline-flex justify-center items-center ml-4">
+                          <span class='icon-tp'></span>
+                        </span>
+                        <span class="ml-2 text-sm tracking-wide truncate">Team Purpose</span>
+                        
+                    </a>
+                </li>
+                <li >
+                  <div class="after:empty-content"></div>
+                    <a href="leadership.html" target="_blank"
+                        class="relative flex flex-row items-center h-11 focus:outline-none hover:bg-tedpink  text-white hover:text-white border-l-4 border-transparent pr-6">
+                        <span class="inline-flex justify-center items-center ml-4">
+                          <span class='icon-ld'></span>
+                        </span>
+                        <span class="ml-2 text-sm tracking-wide truncate">Leadership</span>
+                        
+                    </a>
+                </li>
+                <li>
+                    <a href="valuingindividuals.html" target="_blank"
+                        class="relative flex flex-row items-center h-11 focus:outline-none hover:bg-tedpink  text-white hover:text-white border-l-4 border-transparent pr-6">
+                        <span class="inline-flex justify-center items-center ml-4">
+                          <span class='icon-vi'></span>
+                        </span>
+                        <span class="ml-2 text-sm tracking-wide truncate">Valuing Individuals</span>
+                        
+                    </a>
+                </li>
+                <li>
+                    <a href="engagement.html" target="_blank"
+                        class="relative flex flex-row items-center h-11 focus:outline-none hover:bg-tedpink  text-white hover:text-white border-l-4 border-transparent pr-6">
+                        <span class="inline-flex justify-center items-center ml-4">
+                          <span class='icon-eg'></span>
+                        </span>
+                        <span class="ml-2 text-sm tracking-wide truncate">Engagement</span>
+                        
+                    </a>
+                </li>
+                <li>
+                    <a href="reviewcelebratesuccess.html" target="_blank"
+                        class="relative flex flex-row items-center h-11 focus:outline-none hover:bg-tedpink  text-white hover:text-white border-l-4 border-transparent pr-6">
+                        <span class="inline-flex justify-center items-center ml-4">
+                          <span class='icon-rc'></span>
+                        </span>
+                        <span class="ml-2 text-sm tracking-wide truncate">Review & Celebrate Success</span>
+                        
+                    </a>
+                </li>
+                <li>
+                    <a href="workingtogether.html" target="_blank"
+                        class="relative flex flex-row items-center h-11 focus:outline-none hover:bg-tedpink bg-tedpink text-white hover:text-white border-l-4 border-transparent pr-6">
+                        <span class="inline-flex justify-center items-center ml-4">
+                          <span class='icon-wt'></span>
+                        </span>
+                        <span class="ml-2 text-sm tracking-wide truncate">Working Together</span>
+                        <div class="after: left-60 absolute z-5 pl-1"><i class="fas fa-caret-left text-white text-6xl"></i></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="public/teamengagement.html" target="_blank"
+                        class="relative flex flex-row items-center h-11 focus:outline-none hover:bg-tedpink text-white hover:text-white border-l-4 border-transparent pr-6">
+                        <span class="inline-flex justify-center items-center ml-4">
+                          <span class='icon-te'></span>
+                        </span>
+                        <span class="ml-2 text-sm tracking-wide truncate">Team Engagement</span>
+                    </a>
+                </li>
+                <li class="px-5 hidden md:block">
+                    <div class="flex flex-row items-center h-8">
+                        <div class="text-sm font-light tracking-wide border border-tedgray border-b-1 w-full uppercase"></div>
+                    </div>
+                </li>
+                <li>
+                    <a href="#"
+                        class="relative flex flex-row items-center h-11 focus:outline-none hover:bg-tedpink text-white hover:text-white border-l-4 border-transparent pr-6">
+                        <span class="inline-flex justify-center items-center ml-4">
+                          <i class="fas fa-info-circle"></i>
+                        </span>
+                        <span class="ml-2 text-sm tracking-wide truncate">About TED</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="relative flex flex-row items-center h-11 focus:outline-none hover:bg-tedpink text-white hover:text-white border-l-4 border-transparent pr-6">
+                        <span class="inline-flex justify-center items-center ml-4">
+                          <i class="far fa-question-circle"></i>
+                        </span>
+                        <span class="ml-2 text-sm tracking-wide truncate">Help & Support</span>
+                    </a>
+                </li>
+                </ul>
+                <ul class="flex flex-col py-1 space-y-1 bg-white font-body text-base font-thin ">
+        
+                    <li class="">
+                        <a href="#"
+                            class="relative flex flex-row items-center h-11 focus:outline-none hover:bg-tedpink text-tedblueDark hover:text-white border-l-4 border-transparent pr-6">
+                            <span class="inline-flex justify-center items-center ml-4  ">
+                                <i class="fas fa-user"></i>
+                            </span>
+                            <span class="ml-2 text-sm tracking-wide truncate">ADMINISTRATOR</span>
+                        </a>
+                    </li>
+                    <hr>
+
+                    <li>
+                        <a href="#"
+                            class="relative flex flex-row items-center h-10 focus:outline-none text-white-600 hover:text-white-800 border-l-4 ">
+                            <span class="inline-flex justify-center items-center ">
+        
+                            </span>
+                            <input type="search" name="" id="" placeholder="SEARCH SURVEYS"
+                                class="w-full pl-3 text-sm text-black outline-none focus:outline-none bg-transparent" />
+                            <i class="fas fa-search bg-tedblue py-4 px-4"></i>
+                        </a>
+                    </li>
+        
+        
+                </ul>
+                <ul class="flex flex-col py-1 space-y-1 pb-40">
+        
+                </ul>
+        
+            </div>
+            </div>
+            <!-- ./Sidebar -->
+        <div class="h-full ml-14 mt-14 mb-10 md:ml-64 ">
+    <!-- Main content -->
+    <main class="overflow-hidden">
+        <!-- Intro -->
+        <section class="">
+            <div class="flex bg-white w-full z-0">
+
+                <div class="mt-10 mb-10 w-full sm:w-full">
+                    <div class="sm:ml-0 px-10 lg:px-20">
+                        <h3
+                            class="text-3xl leading-none lg:text-6xl md:text-6xl font-extrabold font-body text-left text-secondary tracking-wider uppercase">
+                            Working<br>Together
+                        </h3>
+                        <br>
+                        <h3 class="text-tedpink font-body font-extrabold text-2xl text-left">Do team members value and
+                            respect each other? Does your team focus on quality and continuous improvement? Does your
+                            team have to work closely together to complete team tasks and meet team objectives? Does
+                            your team support each other to complete team tasks and meet team objectives?
+                            Are team members' roles clear? Is the work meaningful for team members? </h3>
+                        <br>
+
+                    </div>
+                </div>
+                <div class="w-full flex lg:flex  hidden sm:hidden "> <img class="flex h-full w-full object-cover" 
+                        src="img/workingtogether.jpg" alt=""></div>
+
+            </div>
+        </section>
+        <section>
+            <div class="w-full"> <img class="object-contain sm:object-scale-down h-full w-full"
+                    src="img/staffTogether.jpg" alt=""></div>
+            <div class="z-0  bg-white relative flex flex-col min-w-0 break-words w-full mb-8">
+                <div class="container mx-auto">
+                    <div class="justify-center flex flex-wrap">
+
+                        <div class="w-full md:w-12/12 px-4 m-10">
+                            <div class=" border-tedpink border-l-6 pl-5">
+                                <h3 class="text-3xl font-bold font-body text-left text-secondary uppercase ">
+                                    Working together overview
+                                </h3>
+                                <p class="text-base-custom font-body text-left text-secondary">In this section you will be able
+                                    to find development tools and resources to improve the following areas of how teams
+                                    work together:
+
+                                </p>
+                            </div>
+
+                        </div>
+                        <div class="m-5 border-tedpink border-b-3">
+                            <div class="grid grid-cols-1 grid lg:grid-cols-2 gap-8 px-5  mb-5">
+                                <div class="w-full lg:px-14">
+                                    <h3 class="text-2xl font-bold font-body text-left text-secondary">Team values and
+                                        behaviours</h3>
+                                    
+                                    <p class="text-base-custom font-body text-left text-secondary  ">Explore and develop the
+                                        team's ways of working. Or look at how the team value and respect each
+                                        other and how to improve this
+                                        <br>
+
+                                </div>
+                                <div class="w-full lg:px-14">
+                                    <h3 class="text-2xl font-bold font-body text-left text-secondary">Quality and
+                                        continuous improvement.</h3>
+                                    
+                                    <p class="text-base-custom font-body text-left text-secondary">Visit this section to find
+                                        tools to help you focus on quality and ways to achieve continuous
+                                        improvement.
+                                    </p>
+                                </div>
+
+                                <div class="w-full lg:px-14">
+                                    <h3 class="text-2xl font-bold font-body text-left text-secondary">Role clarity and
+                                        interdependence.</h3>
+                                    
+                                    <p class="text-base-custom font-body text-left text-secondary">Evidence shows sucessful teams
+                                        need to work with each other to achieve objectives and roles are clear, equally
+                                        where this is missing this leads to team team ineffectiveness and conflict
+                                    </p>
+                                </div>
+                                <div class="w-full lg:px-14">
+                                    <h3 class="text-2xl font-bold font-body text-left text-secondary">Meaningful work
+                                    </h3>
+                                    
+                                    <p class="text-base-custom font-body text-left text-secondary"> It is a leader's role to help
+                                        their team find meaning in their work and by doing so they can help staff feel
+                                        more motivated and improve staff engagement.
+                                    </p>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="z-0  bg-tedgray relative flex flex-col min-w-0 break-words w-full ">
+                <div class="container mx-auto">
+                    <div class="justify-evenly flex flex-wrap ">
+                        <div class="w-full md:w-12/12 px-4 m-10">
+                            <div class=" border-tedpink border-l-6 pl-5">
+                                <h3 class="text-3xl font-bold font-body text-left text-secondary uppercase ">
+                                    Working together
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap justify-center gap-20  xl:gap-40 pb-20 px-60  ">
+                            <div class="bg-white py-4 px-4  rounded-full border-gray-300 border-2">
+                                <div class="flex justify-center items-center text-center h-64 w-64 ">
+                                    <div class="font-body ">
+                                        <p class="uppercase text-3xl text-tedpink font-semibold ">1.</p>
+                                        <br>
+                                        <p class="text-2xl uppercase  font-bold text-tedblueDark">Team Values <br>
+                                            and Behaviours</p>
+                                        <br>
+                                        <button class="bg-tedgray px-5 py-1 rounded-xl font-bold text-tedblueDark uppercase">Open
+                                            ></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-white py-4 px-4  rounded-full border-gray-300 border-2">
+                                <div class="flex justify-center items-center text-center h-64 w-64 ">
+                                    <div class="font-body ">
+                                        <p class="uppercase text-3xl text-tedpink font-semibold ">2.</p>
+                                        <br>
+                                        <p class="text-2xl uppercase font-bold  text-tedblueDark">Quality and <br>
+                                            continuous <br>
+                                            improvement</p>
+                                        <br>
+                                        <button class="bg-tedgray px-5 py-1 rounded-xl font-bold text-tedblueDark uppercase">Open
+                                            ></button>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="flex flex-wrap justify-center gap-20  xl:gap-40 pb-20 px-60  ">
+                            <div class="bg-white py-4 px-4  rounded-full border-gray-300 border-2">
+                                <div class="flex justify-center items-center text-center h-64 w-64 ">
+                                    <div class="font-body ">
+                                        <p class="uppercase text-3xl text-tedpink font-semibold ">3.</p>
+                                        <br>
+                                        <p class="text-2xl uppercase font-bold  text-tedblueDark">Team <br>
+                                            Roles</p>
+                                        <br>
+                                        <button class="bg-tedgray px-5 py-1 rounded-xl font-bold text-tedblueDark uppercase">Open
+                                            ></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-white py-4 px-4  rounded-full border-gray-300 border-2">
+                                <div class="flex justify-center items-center text-center h-64 w-64 ">
+                                    <div class="font-body ">
+                                        <p class="uppercase text-3xl text-tedpink font-semibold ">4.</p>
+                                        <br>
+                                        <p class="text-2xl uppercase font-bold text-tedblueDark">Meaningful <br>
+                                            work</p>
+                                        <br>
+                                        <button class="bg-tedgray px-5 py-1 rounded-xl font-bold text-tedblueDark uppercase">Open
+                                            ></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+  
+
+
+        <!-- Your Trust -->
+        <section>
+            <div class="z-0  bg-white relative flex flex-col min-w-0 break-words w-full mb-8">
+                <div class="container mx-auto px-6">
+                    <div class="justify-end flex flex-wrap">
+                        <div class="w-full lg:w-12/12 py-5 flex justify-between lg:pt-10 px-10">
+                            <div class=" border-tedpink border-l-6 pl-5">
+                                <h3 class="text-5xl font-bold uppercase font-body text-left text-secondary uppercase ">
+                                    your trust
+                                </h3>
+                            </div>
+
+                            <div class="invisible lg:visible">
+                                <img alt="..." class="max-w-full" " src=" img/company-logo.png">
+                            </div>
+
+                        </div>
+                        <div class="">
+                            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-5">
+
+                                <div class="w-full px-10 lg:pl-8 lg:px-40">
+
+                                    <p class="text-xl  text-secondary font-semibold font-body">Lorem ipsum dolor sit
+                                        amet, consectetur
+                                        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                        aliqua. Ut enim ad minim
+                                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                        consequat.</p><br>
+                                    <p class="text-lg  text-secondary">Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit, sed do
+                                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                        veniam, quis nostrud
+                                        exercitation.</p>
+                                </div>
+
+                                <div class="w-full bg-gray-50 p-8">
+
+                                    <p class="text-base text-secondary text-left">Lorem ipsum dolor sit amet,
+                                        consectetur adipiscing
+                                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                                        ad minim veniam,
+                                        quis nostrud exercitation it enim ad minim veniam.</p>
+                                    <br>
+                                    <div class="grid grid-cols-2 gap-4">
+                                        <div>
+                                            <ul
+                                                class="text-lg text-secondary uppercase font-body font-semibold list-none text-left">
+                                                <li class="my-2"><a href="">LINK 1 ></a></li>
+                                                <li class="my-2"><a href="">LINK 2 ></a></li>
+                                                <li class="my-2"><a href="">LINK 3 ></a></li>
+                                                <li class="my-2"><a href="">LINK 4 ></a></li>
+                                                <li class="my-2"><a href="">LINK 5 ></a></li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <ul
+                                                class="text-lg text-secondary uppercase font-body font-semibold list-none text-left">
+                                                <li class="my-2"><a href="">LINK 6 ></a></li>
+                                                <li class="my-2"><a href="">LINK 7 ></a></li>
+                                                <li class="my-2"><a href="">LINK 8 ></a></li>
+                                                <li class="my-2"><a href="">LINK 9 ></a></li>
+                                                <li class="my-2"><a href="">LINK 10 ></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+    </main>
+</div>
+    <!-- Footer -->
+    <footer class="footer bg-white relative pt-5 pb-5  border-gray-50 border-t-2">
+        <div class="container px-4 mx-auto flex flex-wrap items-center justify-between ">
+            <div class="w-full relative flex justify-center lg:w-auto lg:static lg:block lg:justify-start">
+                <div class="flex-shrink-0 flex items-center">
+                    <div class="flex flex-col">
+                        <span class="font-body place-items-start text-secondary text-sm mb-2">2021 TED All rights
+                            reserved</span>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="lg:flex flex-grow items-center bg-white lg:bg-opacity-0 lg:shadow-none "
+                id="example-collapse-navbar">
+
+                <ul class=" flex flex-col lg:flex-row list-none lg:ml-auto items-center ">
+
+                    <li class="flex items-center px-2">
+                        <button
+                            class="flex items-center text-sm  font-body font-bold leading-snug  text-secondary hover:opacity-50 hover:text-secondary  px-3 py-2 rounded-full"
+                            type="button">
+                            HELP & SUPPORT
+                        </button>
+                    </li>
+                    <li class="flex items-center px-2">
+                        <button
+                            class="flex items-center text-sm  font-body font-bold leading-snug bg-tedpink text-white hover:opacity-50 hover:text-white  px-3 py-2 rounded-full"
+                            type="button">
+                            Back to top
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<!-- Script -->
+<script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+<script>
+
+    /* Function for opning navbar on mobile */
+    function toggleNavbar(collapseID) {
+        document.getElementById(collapseID).classList.toggle("hidden");
+        document.getElementById(collapseID).classList.toggle("block");
+    }
+    /* Function for dropdowns */
+    function openDropdown(event, dropdownID) {
+        let element = event.target;
+        while (element.nodeName !== "A") {
+            element = element.parentNode;
+        }
+        Popper.createPopper(element, document.getElementById(dropdownID), {
+            placement: "bottom-start",
+        });
+        document.getElementById(dropdownID).classList.toggle("hidden");
+        document.getElementById(dropdownID).classList.toggle("block");
+    }
+
+
+    /* Javascript to close the radio button version by clicking it again */
+    var myRadios = document.getElementsByName('tabs2');
+    var setCheck;
+    var x = 0;
+    for (x = 0; x < myRadios.length; x++) {
+        myRadios[x].onclick = function () {
+            if (setCheck != this) {
+                setCheck = this;
+            } else {
+                this.checked = false;
+                setCheck = null;
+            }
+        };
+    }
+</script>
+
+</html>

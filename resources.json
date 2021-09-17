@@ -1,0 +1,397 @@
+
+{
+    "resources":[
+       {
+          "id" : "1", 
+          "topic":"Leadership",
+          "title":"Influence style questionnaire",
+          "link":""
+       },
+       {
+        "id" : "2", 
+        "topic":"Leadership",
+        "title":"Leadership questionnaire",
+        "link":""
+       },
+       {
+        "id" : "3", 
+        "topic":"Leadership",
+        "title":"Let’s talk 360 for managers",
+        "link":""
+       },
+       {
+        "id" : "4", 
+        "topic":"Leadership",
+        "title":"Link back to team purpose resources",
+        "link":""
+       },
+       {
+        "id" : "5", 
+        "topic":"Leadership",
+        "title":"Link to NHS Leadership 360",
+        "link":""
+       },
+       {
+        "id" : "6", 
+        "topic":"Leadership",
+        "title":"List of leadership development support offered at LTH",
+        "link":""
+       },
+       {
+        "id" : "7", 
+        "topic":"Leadership",
+        "title":"Personal brand and visualisation method",
+        "link":""
+       },
+       {
+        "id" : "8", 
+        "topic":"One improvement",
+        "title":"Fix it Friday",
+        "link":""
+       },
+       {
+        "id" : "9", 
+        "topic":"Reasons to be proud",
+        "title":"I make a difference exercise",
+        "link":""
+       },
+       {
+        "id" : "10", 
+        "topic":"Review and Celebrate Success",
+        "title":"Action plan template",
+        "link":""
+        },
+        {
+        "id" : "11", 
+        "topic":"Review and Celebrate Success",
+        "title":"Action plan with RAG template",
+        "link":""
+        },
+        {
+        "id" : "12", 
+        "topic":"Review and Celebrate Success",
+        "title":"Follow up guide (to team meetings)",
+        "link":""
+        },
+        {
+        "id" : "13", 
+        "topic":"Review and Celebrate Success",
+        "title":"Team meeting template (link back from communication)",
+        "link":""
+        },
+        {
+        "id" : "14", 
+        "topic":"Review and Celebrate Success",
+        "title":"Top Ten tips for a lessons learned review",
+        "link":""
+        },
+        {
+        "id" : "15", 
+        "topic":"Team Communication",
+        "title":"Fix it Friday (linked from one improvement)",
+        "link":""
+        },
+        {
+        "id" : "16", 
+        "topic":"Team Communication",
+        "title":"Ideas book",
+        "link":""
+        },
+        {
+        "id" : "17", 
+        "topic":"Team Communication",
+        "title":"Meeting effectiveness review",
+        "link":""
+        },
+        {
+        "id" : "18", 
+        "topic":"Team Communication",
+        "title":"Our Change (linked from Working together)",
+        "link":""
+        },
+        {
+        "id" : "19", 
+        "topic":"Team Communication",
+        "title":"Running effective meetings",
+        "link":""
+        },
+        {
+        "id" : "20", 
+        "topic":"Team Communication",
+        "title":"Staff Survey manager toolkit",
+        "link":""
+        },
+        {
+        "id" : "21", 
+        "topic":"Team Communication",
+        "title":"Stepladder technique to decision making",
+        "link":""
+        },
+        {
+        "id" : "22", 
+        "topic":"Team Communication",
+        "title":"Team decision making - Circle of influence",
+        "link":""
+        },
+        {
+        "id" : "23", 
+        "topic":"Team Communication",
+        "title":"Team decision making – decision matrix grid",
+        "link":""
+        },
+        {
+        "id" : "24", 
+        "topic":"Team Communication",
+        "title":"Team decision making – SWOT analysis (link back to team purpose)",
+        "link":""
+        },
+        {
+        "id" : "25", 
+        "topic":"Team Communication",
+        "title":"The Perfect Shift",
+        "link":""
+        },
+        {
+        "id" : "26", 
+        "topic":"Team Engagement",
+        "title":"Leading Virtual Teams",
+        "link":""
+        },
+        {
+        "id" : "27", 
+        "topic":"Team Engagement",
+        "title":"Team Culture Conversations",
+        "link":""
+        },
+        {
+        "id" : "28", 
+        "topic":"Team Engagement",
+        "title":"Team Recovery Tools",
+        "link":""
+        },
+
+        {
+        "id" : "29", 
+        "topic":"Team Engagement",
+        "title":"Teaming Resource",
+        "link":""
+        },
+        {
+        "id" : "30", 
+        "topic":"Team Purpose",
+        "title":"Activities to objectives ",
+        "link":""
+        },
+        {
+        "id" : "31", 
+        "topic":"Team Purpose",
+        "title":"Objectives action plan",
+        "link":""
+        },
+        {
+        "id" : "32", 
+        "topic":"Team Purpose",
+        "title":"Over to you – delegation conversation guide",
+        "link":""
+        },
+        {
+        "id" : "33", 
+        "topic":"Team Purpose",
+        "title":"Review your team objectives",
+        "link":""
+        },
+        {
+        "id" : "34", 
+        "topic":"Team Purpose",
+        "title":"SMART goals worksheet",
+        "link":""
+        },
+        {
+        "id" : "35", 
+        "topic":"Team Purpose",
+        "title":"SWOT",
+        "link":""
+        },
+        {
+        "id" : "36", 
+        "topic":"Team Purpose",
+        "title":"Team Brand – building a positive team profile and brand",
+        "link":""
+        },
+        {
+        "id" : "37", 
+        "topic":"Team Purpose",
+        "title":"Team purpose alignment review",
+        "link":""
+        },
+        {
+        "id" : "38", 
+        "topic":"Team Purpose",
+        "title":"Team Purpose exercise",
+        "link":""
+        },
+        {
+        "id" : "39", 
+        "topic":"Valuing the individual",
+        "title":"Me at my best and me at my worst",
+        "link":""
+        },
+        {
+        "id" : "40", 
+        "topic":"Valuing the individual",
+        "title":"One page profiles (linked content from working together)",
+        "link":""
+        },
+        {
+        "id" : "41", 
+        "topic":"Valuing the individual",
+        "title":"One to one agenda template (linked through from Review and Celebrate success)",
+        "link":""
+        },
+        {
+        "id" : "42", 
+        "topic":"Working Together",
+        "title":"Career anchors (linked within meaningful  work)",
+        "link":""
+        },
+        {
+        "id" : "43", 
+        "topic":"Working Together",
+        "title":"Civility Toolkit",
+        "link":""
+        },
+        {
+        "id" : "44", 
+        "topic":"Working Together",
+        "title":"Clarifying role clarity interdependence",
+        "link":""
+        },
+        {
+        "id" : "45", 
+        "topic":"Working Together",
+        "title":"Developing team Operating Principles",
+        "link":""
+        },
+        {
+        "id" : "46", 
+        "topic":"Working Together",
+        "title":"Getting started with one page profiles",
+        "link":""
+        },
+        {
+        "id" : "47", 
+        "topic":"Working Together",
+        "title":"One page profile",
+        "link":""
+        },
+        {
+        "id" : "48", 
+        "topic":"Working Together",
+        "title":"Role clarification pro-forma template",
+        "link":""
+        },
+        {
+        "id" : "49", 
+        "topic":"Working Together",
+        "title":"Role clarity review",
+        "link":""
+        },
+        {
+        "id" : "50", 
+        "topic":"Working Together",
+        "title":"Role Skill and Knowledge Review",
+        "link":""
+        },
+        {
+        "id" : "51", 
+        "topic":"Working Together",
+        "title":"Team Operating Principles Review",
+        "link":""
+        },
+        {
+        "id" : "52", 
+        "topic":"Working Together",
+        "title":"The Perfect Shift Model workshop",
+        "link":""
+        },  
+        {
+        "id" : "53", 
+        "topic":"Working Together",
+        "title":"The Perfect Shift output and confidence ratings",
+        "link":""
+        },
+        {
+        "id" : "54", 
+        "topic":"Working Together",
+        "title":"Tuckman team work survey",
+        "link":""
+        },
+        {
+        "id" : "55", 
+        "topic":"Working Together",
+        "title":"Tuckman’s team formation model",
+        "link":""
+        },
+        {
+        "id" : "56", 
+        "topic":"Working Together",
+        "title":"Values in practice",
+        "link":""
+        },
+        {
+        "id" : "57", 
+        "topic":"Working Together",
+        "title":"Values Thank You",
+        "link":""
+        },
+        {
+        "id" : "58", 
+        "topic":"Working Together",
+        "title":"We Say We Do",
+        "link":""
+        },
+        {
+        "id" : "59", 
+        "topic":"Working Together",
+        "title":"What I do, what I don’t do and grey areas exercise",
+        "link":""
+        },
+        {
+        "id" : "60", 
+        "topic":"Working With Other Teams",
+        "title":"Inter-team working review",
+        "link":""
+        },
+        {
+        "id" : "61", 
+        "topic":"Working With Other Teams",
+        "title":"Perfect Shift and Perfect Shifts confidence rating",
+        "link":""
+        },
+        {
+        "id" : "62", 
+        "topic":"WWorking With Other Teams",
+        "title":"Stakeholder map",
+        "link":""
+        },
+        {
+        "id" : "63", 
+        "topic":"Working With Other Teams",
+        "title":"Team Brand",
+        "link":""
+        },
+        {
+        "id" : "64", 
+        "topic":"Working With Other Teams",
+        "title":"Team Community Map",
+        "link":""
+        },
+        {
+        "id" : "65", 
+        "topic":"Working With Other Teams",
+        "title":"World Cafe",
+        "link":""
+        }
+        
+    ]
+ }

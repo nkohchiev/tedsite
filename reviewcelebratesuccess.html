@@ -1,0 +1,1255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/vendor/@fortawesome/fontawesome-free/css/all.min.css" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <title>TED - Review and celebrate success</title>
+</head>
+
+<body>
+    <!-- Navigation-->
+    <header class="sticky top-0 z-50 shadow-md">
+        <nav
+            class="top-0 z-50 w-full flex flex-wrap items-start justify-between py-3 navbar-expand-lg bg-white fixed shadow-md">
+            <div class=" w-full mx-auto px-5 flex flex-wrap ">
+                <div class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
+                    <div class="flex-shrink-0 flex items-center">
+                        <img class="lg:block h-14 w-auto" src="img/logo.svg" alt="Workflow">
+                    </div>
+                    <button
+                        class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+                        type="button" onclick="toggleNavbar('example-collapse-navbar')">
+                        <i class="text-secondary fas fa-bars"></i>
+                    </button>
+                </div>
+                <div class="lg:flex flex-grow items-center bg-white lg:bg-opacity-0 lg:shadow-none hidden"
+                    id="example-collapse-navbar">
+                    <ul class=" flex flex-col lg:flex-row list-none lg:ml-auto items-center">
+                        <li class="inline-block relative">
+                            <a class="px-8 py-2 flex items-center text-sm uppercase font-body font-semibold leading-snug text-secondary hover:opacity-75 hover:bg-secondary hover:text-white px-3 py-2 rounded-full"
+                                href="#pablo" onclick="openDropdown(event,'demo-pages-dropdown')">
+                                Development content
+                            </a>
+                            <div class="hidden bg-white text-base z-50 float-left py-2 list-none text-left rounded shadow-lg min-w-48"
+                                id="demo-pages-dropdown">
+                                <a href="#"
+                                    class="text-sm py-3 px-4 font-body block w-full whitespace-nowrap bg-transparent text-blueGray-700">
+                                    Drop item 1
+                                </a>
+                                <a href="#"
+                                    class="text-sm py-2 px-4 font-body block w-full whitespace-nowrap bg-transparent text-blueGray-700">
+                                    Drop item 2
+                                </a>
+                                <a href="#"
+                                    class="text-sm py-2 px-4 font-body block w-full whitespace-nowrap bg-transparent text-blueGray-700">
+                                    Drop item 3
+                                </a>
+                                <a href="#"
+                                    class="text-sm py-2 px-4 font-body block w-full whitespace-nowrap bg-transparent text-blueGray-700">
+                                    Drop item 4
+                                </a>
+                            </div>
+                        </li>
+                        <li class="flex items-center">
+                            <button
+                                class="px-8 py-2 flex items-center text-sm uppercase font-body font-semibold leading-snug text-secondary hover:opacity-75 hover:bg-secondary hover:text-white px-3 py-2 rounded-full"
+                                type="button">
+                                About TED
+                            </button>
+                        </li>
+                        <li class="flex items-center">
+                            <button
+                                class="px-8 py-2 flex items-center text-sm uppercase font-body font-semibold leading-snug text-secondary hover:opacity-75 hover:bg-secondary hover:text-white px-3 py-2 rounded-full"
+                                type="button">
+                                Log out
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+                <!-- Sidebar -->
+                <div
+                class="fixed flex flex-col top-14 left-0 w-14 hover:w-64 md:w-64 bg-tedblueDark dark:bg-gray-900 h-full text-white transition-all duration-300 border-none z-10 sidebar mr-5 ">
+                <div
+                    class="overflow-y-auto overflow-x-hidden flex flex-col justify-between flex-grow scrollbar-none scrollbar-thumb-tedblueDark scrollbar-track-white h-32 overflow-y-scroll  ">
+                    <ul class="flex flex-col py-4 space-y-1 font-body ">
+                        <li class="px-5 hidden md:block">
+                            <div class="flex flex-row items-center h-8">
+                                <div class="text-sm font-light tracking-wide text-gray-400 uppercase"></div>
+                            </div>
+                        </li>
+                        <li>
+        
+
+                <li>
+                    <a href="public/dashboard.html" target="_blank"
+                        class="relative flex flex-row items-center h-11 focus:outline-none hover:bg-tedpink text-white hover:text-white border-l-4 border-transparent pr-6">
+                        <span class="inline-flex justify-center items-center ml-4">
+                            <i class="fas fa-home"></i>
+                        </span>
+                        <span class="ml-2 text-sm tracking-wide truncate">TED DASHBOARD</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="devcontent.html" target="_blank"
+                        class="relative flex flex-row items-center h-11 focus:outline-none hover:bg-tedpink text-white hover:text-white border-l-4 border-transparent pr-6">
+                        <span class="inline-flex justify-center items-center ml-4">
+                          <i class="fas fa-sitemap"></i>
+                        </span>
+                        <span class="ml-2 text-sm tracking-wide truncate">DEVELOPMENT CONTENT</span>
+                    </a>
+                </li>
+        
+                <li class="px-5 hidden md:block">
+                    <div class="flex flex-row items-center mt-5 h-8">
+                        <div class="text-sm font-light tracking-wide text-white uppercase">QUICK LINKS:</div>
+                    </div>
+                </li>
+                <li >
+                    <a  href="teamcom.html" target="_blank"
+                        class=" relative flex flex-row items-center h-11 focus:outline-none  hover:bg-tedpink  text-white hover:text-white border-l-4 border-transparent pr-6">
+                        <span class="inline-flex justify-center items-center ml-4">
+                          <span class='icon-tm'></span>
+                        </span>
+                        <span class="ml-2 text-sm tracking-wide truncate">Team Communication</span>
+
+         
+                    </a>
+                </li>
+                <li>
+                
+                    <a href="workingwithothers.html" target="_blank"
+                        class="relative flex flex-row items-center h-11 focus:outline-none hover:bg-tedpink  text-white hover:text-white border-l-4 border-transparent pr-6">
+                        <span class="inline-flex justify-center items-center ml-4">
+                          <span class='icon-wo'></span>
+                        </span>
+                        <span class="ml-2 text-sm tracking-wide truncate">Working With Other Teams</span>
+                    </a>
+                </li>
+                                
+                <li>
+                    <a href="teampurpose.html" target="_blank"
+                        class="relative flex flex-row items-center h-11 focus:outline-none hover:bg-tedpink  text-white hover:text-white border-l-4 border-transparent pr-6">
+                        <span class="inline-flex justify-center items-center ml-4">
+                          <span class='icon-tp'></span>
+                        </span>
+                        <span class="ml-2 text-sm tracking-wide truncate">Team Purpose</span>
+                        
+                    </a>
+                </li>
+                <li >
+                  <div class="after:empty-content"></div>
+                    <a href="leadership.html" target="_blank"
+                        class="relative flex flex-row items-center h-11 focus:outline-none hover:bg-tedpink  text-white hover:text-white border-l-4 border-transparent pr-6">
+                        <span class="inline-flex justify-center items-center ml-4">
+                          <span class='icon-ld'></span>
+                        </span>
+                        <span class="ml-2 text-sm tracking-wide truncate">Leadership</span>
+                        
+                    </a>
+                </li>
+                <li>
+                    <a href="valuingindividuals.html" target="_blank"
+                        class="relative flex flex-row items-center h-11 focus:outline-none hover:bg-tedpink  text-white hover:text-white border-l-4 border-transparent pr-6">
+                        <span class="inline-flex justify-center items-center ml-4">
+                          <span class='icon-vi'></span>
+                        </span>
+                        <span class="ml-2 text-sm tracking-wide truncate">Valuing Individuals</span>
+                        
+                    </a>
+                </li>
+                <li>
+                    <a href="engagement.html" target="_blank"
+                        class="relative flex flex-row items-center h-11 focus:outline-none hover:bg-tedpink  text-white hover:text-white border-l-4 border-transparent pr-6">
+                        <span class="inline-flex justify-center items-center ml-4">
+                          <span class='icon-eg'></span>
+                        </span>
+                        <span class="ml-2 text-sm tracking-wide truncate">Engagement</span>
+                        
+                    </a>
+                </li>
+                <li>
+                    <a href="reviewcelebratesuccess.html" target="_blank"
+                        class="relative flex flex-row items-center h-11 focus:outline-none hover:bg-tedpink bg-tedpink text-white hover:text-white border-l-4 border-transparent pr-6">
+                        <span class="inline-flex justify-center items-center ml-4">
+                          <span class='icon-rc'></span>
+                        </span>
+                        <span class="ml-2 text-sm tracking-wide truncate">Review & Celebrate Success</span>
+                        <div class="after: left-60 absolute z-5 pl-1"><i class="fas fa-caret-left text-white text-6xl"></i></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="workingtogether.html" target="_blank"
+                        class="relative flex flex-row items-center h-11 focus:outline-none hover:bg-tedpink text-white hover:text-white border-l-4 border-transparent pr-6">
+                        <span class="inline-flex justify-center items-center ml-4">
+                          <span class='icon-wt'></span>
+                        </span>
+                        <span class="ml-2 text-sm tracking-wide truncate">Working Together</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="public/teamengagement.html" target="_blank"
+                        class="relative flex flex-row items-center h-11 focus:outline-none hover:bg-tedpink text-white hover:text-white border-l-4 border-transparent pr-6">
+                        <span class="inline-flex justify-center items-center ml-4">
+                          <span class='icon-te'></span>
+                        </span>
+                        <span class="ml-2 text-sm tracking-wide truncate">Team Engagement</span>
+                    </a>
+                </li>
+                <li class="px-5 hidden md:block">
+                    <div class="flex flex-row items-center h-8">
+                        <div class="text-sm font-light tracking-wide border border-tedgray border-b-1 w-full uppercase"></div>
+                    </div>
+                </li>
+                <li>
+                    <a href="#"
+                        class="relative flex flex-row items-center h-11 focus:outline-none hover:bg-tedpink text-white hover:text-white border-l-4 border-transparent pr-6">
+                        <span class="inline-flex justify-center items-center ml-4">
+                          <i class="fas fa-info-circle"></i>
+                        </span>
+                        <span class="ml-2 text-sm tracking-wide truncate">About TED</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="relative flex flex-row items-center h-11 focus:outline-none hover:bg-tedpink text-white hover:text-white border-l-4 border-transparent pr-6">
+                        <span class="inline-flex justify-center items-center ml-4">
+                          <i class="far fa-question-circle"></i>
+                        </span>
+                        <span class="ml-2 text-sm tracking-wide truncate">Help & Support</span>
+                    </a>
+                </li>
+                </ul>
+                <ul class="flex flex-col py-1 space-y-1 bg-white font-body text-base font-thin ">
+        
+                    <li class="">
+                        <a href="#"
+                            class="relative flex flex-row items-center h-11 focus:outline-none hover:bg-tedpink text-tedblueDark hover:text-white border-l-4 border-transparent pr-6">
+                            <span class="inline-flex justify-center items-center ml-4  ">
+                                <i class="fas fa-user"></i>
+                            </span>
+                            <span class="ml-2 text-sm tracking-wide truncate">ADMINISTRATOR</span>
+                        </a>
+                    </li>
+                    <hr>
+
+                    <li>
+                        <a href="#"
+                            class="relative flex flex-row items-center h-10 focus:outline-none text-white-600 hover:text-white-800 border-l-4 ">
+                            <span class="inline-flex justify-center items-center ">
+        
+                            </span>
+                            <input type="search" name="" id="" placeholder="SEARCH SURVEYS"
+                                class="w-full pl-3 text-sm text-black outline-none focus:outline-none bg-transparent" />
+                            <i class="fas fa-search bg-tedblue py-4 px-4"></i>
+                        </a>
+                    </li>
+        
+        
+                </ul>
+                <ul class="flex flex-col py-1 space-y-1 pb-40">
+        
+                </ul>
+        
+            </div>
+            </div>
+            <!-- ./Sidebar -->
+    <div class="h-full ml-14 mt-14 mb-10 md:ml-64 ">
+    <!-- Main content -->
+    <main class="overflow-hidden">
+        <!-- Intro -->
+        <section class="">
+            <div class="flex bg-white w-full z-0">
+
+                <div class="mt-10 mb-10 w-full sm:w-full">
+                    <div class="sm:ml-0 px-10 lg:px-20">
+                        <h3
+                            class="text-3xl leading-none lg:text-6xl md:text-6xl font-extrabold font-body text-left text-secondary tracking-wider uppercase">
+                            Review and <br> celebrate success
+
+                        </h3>
+                        <br>
+                        <h3 class="text-tedpink font-body font-extrabold text-2xl text-left">Does your team meet
+                            regularly to review goals and strategies? Does your team change plans when needed? As a team
+                            do you reward and recognise your successes?
+                        </h3>
+                        <br>
+                        <h3 class="text-secondary font-body text-lg-custom text-left">Lorem ipsum dolor sit amet, consetetur
+                            sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+                            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
+                            kasd gubergren, no.</h3>
+                        <br>
+
+                    </div>
+                </div>
+                <div class="w-full flex lg:flex  hidden sm:hidden "> <img class="flex h-full w-full object-cover"
+                        src="img/celebratesuccess.jpg" alt=""></div>
+
+            </div>
+        </section>
+        <section>
+
+            <div class="z-0  bg-tedgray relative flex flex-col min-w-0 break-words w-full ">
+                <div class="container mx-auto">
+                    <div class="justify-center flex flex-wrap">
+
+                        <div class="w-full md:w-12/12 px-4 m-10">
+                            <div class=" border-tedpink border-l-6 pl-5">
+                                <h3 class="text-3xl font-bold font-body text-left text-secondary uppercase ">
+                                    REFLEXIVITY is one of the key areas that contributes to a real team
+                                </h3>
+                                <p class="text-base-custom font-body text-left text-secondary">This is were the team meets
+                                    regularly to review immediate goals and long term strategies and change these when
+                                    needed
+                                </p>
+                            </div>
+
+                        </div>
+                        <div class="m-5  ">
+                            <div class="grid grid-cols-1 grid lg:grid-cols-2 px-5 mb-5">
+
+                                <div class="w-full lg:px-14 pb-10">
+
+                                    <p class="text-base-custom font-body text-left text-secondary">Teams often focus on the task
+                                        at hand, and effective teams also take time to review goals and strategies,
+                                        change and adapt when needed, and recognise success.
+                                        <br> <br>
+                                        One of the best ways to improve performance is to provide individuals and the
+                                        team with feedback and that is why it
+                                        is important you take time to review team progress. It is an opportunity for you
+                                        and the team to think about what is working and what is not working, and
+                                        important clarify next steps<br> <br>
+                                    </p>
+
+                                </div>
+                                <div class="w-full">
+                                    <h3
+                                        class="text-xl lg:text-3xl font-bold font-body text-left text-secondary tracking-wide leading-normal ">
+                                        In addition, feeling valued and recognised <br> by the team, manager and the
+                                        organisation <br> leads to higher engagement. It’s important <br> you take time
+                                        to
+                                        celebrate the successes <br> of the individuals and the team.</h3><br>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="z-0  bg-tedlightBlue relative flex flex-col min-w-0 break-words w-full ">
+                <div class="container mx-auto">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                        <div class="lg:w-12/12 py-5 mx-14">
+                            <div class=" border-tedpink border-l-6 pl-5">
+                                <h3 class="text-3xl font-bold font-body text-left text-secondary uppercase ">
+                                    Monitoring and <br> review processes
+                                </h3>
+
+                            </div>
+                            <div class="w-full pt-5 lg:ml-6 ">
+
+                                <p class="text-base-custom  text-secondary font-normal font-body">Make sure you schedule one to
+                                    one meetings with individual team members and as a team to review progress and
+                                    plans.</p><br>
+                                <p class="text-base-custom  text-secondary font-normal font-body">The Follow Up Guide explores how you can follow up
+                                    on actions agreed in meetings. Creating action plans and SMART objectives can help
+                                    you monitor and review progress. These can be created for the team and individuals
+                                </p><br>
+                                <p class="text-base-custom  text-secondary font-normal font-body">You can use your action plans and SMART
+                                    objectives plans in one to one meetings, team meetings or even schedule an annual
+                                    away day where you can review plans</p>
+                                <br>
+                                <div
+                                    class="flex flex-wrap lg:gap-10 pb-10  lg:flex-row flex-col mx-0 pt-10">
+
+                                    <button
+                                        class="text-white font-body text-center text-base shadow-md  bg-tedpink hover:bg-tedpinkHover border-solid border-pink-500 hover:text-white active:bg-pink-600 font-bold  lg:px-32 py-3 rounded-full outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                                        type="button">
+                                        One to one agenda.
+                                    </button>
+                                    <br>
+                                    <button
+                                        class="text-white font-body text-center text-base shadow-md  bg-tedpink hover:bg-tedpinkHover border-solid border-pink-500 hover:text-white active:bg-pink-600 font-bold  lg:px-24 py-3 rounded-full outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                                        type="button">
+                                        Example team meeting agenda.
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="bg-white py-4 px-10 w-full lg:w-3/4 h-full ">
+                            <div class="flex justify-center items-center text-center ">
+                                <div class="font-body text-center">
+                                    <p class="text-base-custom  text-tedblueDark font-normal py-5">The documents below will
+                                        help you to use the tool:</p><br>
+
+                                    <br>
+                                    <div class="flex flex-wrap justify-center gap-10 lg:flex-row flex-col -mx-32 ">
+
+                                        <button
+                                            class="text-white font-body text-center text-base shadow-md  bg-tedpink hover:bg-tedpinkHover border-solid border-pink-500 hover:text-white active:bg-pink-600 font-bold  lg:px-32 py-3 rounded-full outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                                            type="button">
+                                            Follow up guide.
+                                        </button>
+                                        <button
+                                            class="text-white font-body text-center text-base shadow-md  bg-tedpink hover:bg-tedpinkHover border-solid border-pink-500 hover:text-white active:bg-pink-600 font-bold  lg:px-28 py-3 rounded-full outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                                            type="button">
+                                            Action plan template.
+                                        </button>
+                                        <button
+                                            class="text-white font-body text-center text-base shadow-md  bg-tedpink hover:bg-tedpinkHover border-solid border-pink-500 hover:text-white active:bg-pink-600 font-bold  lg:px-14 py-3 rounded-full outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                                            type="button">
+                                            Action plan template with a RAG rating.
+                                        </button>
+                                        <button
+                                            class="text-white font-body text-center text-base shadow-md  bg-tedpink hover:bg-tedpinkHover border-solid border-pink-500 hover:text-white active:bg-pink-600 font-bold  lg:px-32 py-3 rounded-full outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                                            type="button">
+                                            SMART objectives.
+                                        </button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="z-0 relative bg-transparent flex flex-col min-w-0 break-words w-full">
+                <div class="w-full"> <img class="" src="img/nhsNurseTog.jpg" alt=""></div>
+
+            </div>
+
+
+        </section>
+
+        <!-- Develop opportunities  -->
+        <section>
+            <div class="z-0  bg-white relative flex flex-col min-w-0 break-words w-full pb-20 pt-10">
+                <div class="container mx-auto">
+                    <div class="justify-center flex flex-wrap">
+                        <div class="w-full md:w-12/12 px-4 m-10">
+                            <div class=" border-tedpink border-l-6 pl-5">
+                                <h3 class="text-3xl font-bold font-body text-left text-secondary uppercase ">
+                                    Annual review
+                                </h3>
+                                <p class="text-base-custom font-body text-left text-secondary">It is useful to undertake an
+                                    <b>annual review</b> as a team. Get the team involved either by holding a meeting or
+                                    perhaps setting up an away day. <br>
+                                    Structure your review by asking the following questions:
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mx-auto lg:px-20 lg:border-tedpink lg:border-b-2">
+                            <div class="grid lg:grid-cols-2 gap-14 px-10 py-5 font-body pb-20">
+                                <div class="px-10">
+                                    <h3
+                                        class="py-5 text-2xl  text-tedpink font-bold rounded-full h-12 w-12 flex items-center justify-center border-3 border-tedpink">
+                                        1.</h3>
+                                    <h3 class="pt-5 text-secondary">What have we achieved?</h3>
+                                </div>
+                                <div class="px-10">
+                                    <h3
+                                        class="py-5 text-2xl  text-tedpink font-bold rounded-full h-12 w-12 flex items-center justify-center border-3 border-tedpink">
+                                        2.</h3>
+                                    <h3 class="pt-5 text-secondary">What have we done to contribute towards the
+                                        achievement?</h3>
+                                </div>
+                                <div class="px-10">
+                                    <h3
+                                        class="py-5 text-2xl  text-tedpink font-bold rounded-full h-12 w-12 flex items-center justify-center border-3 border-tedpink">
+                                        3.</h3>
+                                    <h3 class="pt-5 text-secondary">Where is there still work to do?
+                                    </h3>
+                                </div>
+                                <div class="px-10">
+                                    <h3
+                                        class="py-5 text-2xl  text-tedpink font-bold rounded-full h-12 w-12 flex items-center justify-center border-3 border-tedpink">
+                                        4.</h3>
+                                    <h3 class="pt-5 text-secondary">What has got in our way or what is getting in our
+                                        way?</h3>
+                                </div>
+                                <div class="px-10">
+                                    <h3
+                                        class="py-5 text-2xl  text-tedpink font-bold rounded-full h-12 w-12 flex items-center justify-center border-3 border-tedpink">
+                                        5.</h3>
+                                    <h3 class="pt-5 text-secondary">What do we need to focus on over the next 12 months,
+                                        or 3 years?</h3>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="z-0  bg-tedgreen300 relative flex flex-col min-w-0 break-words w-full">
+
+                <div class="container mx-auto flex lg:flex-nowrap flex-wrap">
+
+                    <div class=" px-4 m-10  ">
+                        <div class=" border-white border-l-6 pl-5">
+                            <h3 class="text-5xl font-bold font-body text-left text-white uppercase ">
+                                Top tip prepare <br> ahead of the <br> review
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="bg-white py-4 px-10 w-full lg:w-1/3  lg:ml-40">
+                        <div class="flex justify-center items-center text-center">
+                            <div class="font-body text-left my-20">
+                                <p class="text-base-custom text-secondary font-normal text-left">It may be useful for you
+                                    to think about some of the answers to these questions ahead of the review meeting so
+                                    that you can encourage the team and show that you have noticed the teams's
+                                    performance successes.</p><br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </section>
+        <section>
+            <div class="z-0  bg-white relative flex flex-col min-w-0 break-words w-full ">
+                <div class="container mx-auto mt-10 ">
+                    <div class="justify-center flex flex-wrap  lg:pb-20">
+                        <div class="w-full lg:w-12/12 px-4 m-10 ">
+                            <div class=" border-tedpink border-l-6 pl-5 ">
+                                <h3 class="text-3xl font-bold font-body text-left text-secondary uppercase ">
+                                    Team away day agenda
+                                </h3>
+                                <p class="text-base-custom font-body text-left text-secondary">You may also conduct a team away
+                                    day to take stock of where the team are and the challenges that lie ahead.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+
+                        <div
+                            class="flex flex-wrap justify-center gap-10 pb-1  xl:flex-row flex-col mx-20 lg:absolute lg:bottom-0 lg:right-0 ">
+                            <button
+                                class="text-white font-body text-center text-base shadow-md  bg-tedpink hover:bg-tedpinkHover border-solid border-pink-500 hover:text-white active:bg-pink-600 font-bold  px-10 py-3 rounded-full outline-none focus:outline-none  ease-linear transition-all duration-150"
+                                type="button">
+                                Example template of team away day agenda
+                            </button>
+
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <div class="justify-center flex flex-wrap">
+                <div class="border-tedpink border-b-3 h-10 w-11/12 mb-10 "></div>
+            </div>
+            <div class="z-0 relative bg-transparent flex flex-col min-w-0 break-words w-full">
+                <div class="w-full"> <img class="" src="img/nhsNurseTog.jpg" alt=""></div>
+
+            </div>
+
+            <div class="z-0  bg-white relative flex flex-col min-w-0 break-words w-full mb-4">
+                <div class="container mx-auto">
+                    <div class="justify-center flex flex-wrap ">
+                        <div class="w-full lg:w-12/12 px-4 m-10 pb-10">
+                            <div class=" border-tedpink border-l-6 pl-5 ">
+                                <h3 class="text-3xl font-bold font-body text-left text-secondary uppercase ">
+                                    lessons learnt review
+                                </h3>
+                                <p class="text-base-custom font-body text-left text-secondary">Following success, an incident or
+                                    completing a piece of work you may find it useful to think about the lessons learnt,
+                                    which is the approach we
+                                    want to take to create a continuous improvement culture. Organisations and teams
+                                    that are successful focus on continuous improvement and
+                                    by considering what went well and what you can do to improve.
+                                </p>
+                            </div>
+
+
+                        </div>
+                        <div class="flex  flex-wrap lg:overflow-hidden mx-14 ">
+
+                            <div class="lg:w-1/2 lg:overflow-hidden">
+                                <div
+                                class="">
+                                <div class="w-full pb-5 lg:px-10">
+                                    <p class="text-secondary font-body text-base-custom">The <b>Personal Development and
+                                            Performance
+                                            Review (PDRP)</b> is also an opportunity for you to review individual
+                                        performance,
+                                        achievement, contribution and development.</p>
+    
+                                </div>
+                                <!-- ... -->
+    
+                            </div>
+                            </div>
+                          
+                            <div class="lg:w-1/2 overflow-hidden">
+                              <!-- Column Content -->
+                              <div
+                              class="">
+                              <button
+                                  class="text-white font-body text-center text-base shadow-md  bg-tedpink hover:bg-tedpinkHover border-solid border-pink-500 hover:text-white active:bg-pink-600 font-bold  px-10 py-3 rounded-full outline-none focus:outline-none  ease-linear transition-all duration-150"
+                                  type="button">
+                                  Top ten tips on how to conduct a lessons leared review
+                              </button>
+  
+                          </div>
+                            </div>
+                          
+                          </div>
+      
+
+
+                       
+
+                    </div>
+
+                    
+                </div>
+
+               
+            </div>
+            <div class="justify-center flex flex-wrap">
+                <div class="border-tedpink border-b-3 h-10 w-11/12 mb-10 "></div>
+            </div>
+        </section>
+
+        <section>
+
+            <div class="z-0  bg-tedgray relative flex flex-col min-w-0 break-words w-full ">
+                <div class="container mx-auto">
+                    <div class="justify-center flex flex-wrap">
+
+                        <div class="w-full md:w-12/12 px-4 m-10">
+                            <div class=" border-tedpink border-l-6 pl-5">
+                                <h3 class="text-3xl font-bold font-body text-left text-secondary uppercase ">
+                                    Celebrating Success
+                                </h3>
+                                <p class="text-base-custom font-body text-left text-secondary">One of the key factors that
+                                    influences whether staff feel engaged is feeling valued by their team, manager and
+                                    organisation.
+                                </p>
+                            </div>
+
+                        </div>
+                        <div class="m-5 ">
+                            <div class="grid grid-cols-1 grid lg:grid-cols-3  px-5  mb-5 pb-10">
+                                <div class="w-full lg:px-14">
+                                    <h3 class="text-2xl font-bold font-body text-left text-secondary">Often teams focus
+                                        on things that are going wrong, but do you actively look for things that are
+                                        going right?</h3>
+
+                                </div>
+                                <div class="w-full lg:px-14">
+                                    <h3 class="text-2xl font-bold font-body text-left text-secondary">How often do you
+                                        show appreciation to the team?</h3>
+
+                                </div>
+                                <div class="w-full lg:px-14">
+                                    <h3 class="text-2xl font-bold font-body text-left text-secondary">How often do you
+                                        say thank you or let the team know they’re doing a good job?</h3>
+
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 gap-8 px-5  mb-5 ">
+                                <div class="w-full lg:px-14">
+                                    <p class="text-lg font-body font-bold text-left text-secondary">Team leaders need to create a
+                                        culture where staff feel positive and engaged. There are three ways you could do
+                                        this:</p>
+                                    <br>
+                                    <ul class="list-disc list-outside text-base-custom font-body text-left text-secondary ml-5">
+                                        <li>Formal recognition schemes such as internal annual awards, external awards
+                                            and employee of the month schemes
+                                        </li>
+                                        <br>
+                                        <li>Planned mechanisms such as having a monthly review of team successes,
+                                            planning a day where you collect and share positive feedback,
+                                            sharing best practice or case studies.
+                                        </li>
+                                        <br>
+                                        <li> Less formal and more day- to-day interactions with your team where you give
+                                            praise and recognition</li>
+                                    </ul>
+
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="w-full"> <img class="object-contain sm:object-scale-down h-full w-full" src="img/groupNHS.jpg"
+                    alt=""></div>
+        </section>
+
+        <section>
+
+            <div class="z-0  bg-white relative flex flex-col min-w-0 break-words w-full mb-8">
+                <div class="container mx-auto">
+                    <div class="justify-center flex flex-wrap">
+
+                        <div class="w-full md:w-12/12 px-4 m-10">
+                            <div class=" border-tedpink border-l-6 pl-5">
+                                <h3 class="text-3xl font-bold font-body text-left text-secondary uppercase ">
+                                    Formal Recognition
+                                </h3>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="container mx-auto">
+                        <div class=" flex flex-wrap flex-col-2  pt-10 pb-10 ">
+                            <div class="w-full lg:w-3/12 ">
+                                <a href="#">
+                                    <div
+                                        class="hover:-mt-4 relative flex flex-col min-w-0 break-words w-full mb-6  ease-linear transition-all duration-150 px-20 md:px-40 lg:px-14">
+                                        <img alt="..." class="align-middle border-none max-h-full h-auto rounded-full"
+                                            src="img/understandWhat.png" />
+                                    </div>
+                                </a>
+
+                            </div>
+                            <div class="w-full lg:w-8/12 px-5 mt-10 lg:pl-20 ">
+                                <div class=" border-tedpink border-l-6 pl-5">
+                                    <h3 class="text-3xl font-bold font-body text-left text-secondary uppercase ">
+                                        Quality awards
+                                    </h3>
+                                    <p class="text-base-custom font-body text-left text-secondary">these are the Trust annual
+                                        awards. Are you encouraging your team so make nominations? Have you made a
+                                        nomination
+                                        for your team or individuals within your team?
+                                    </p>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="justify-center flex flex-wrap">
+                            <div class="border-tedpink border-b-3 h-10 w-11/12 mb-10 "></div>
+                        </div>
+                    </div>
+
+                    <div class="container mx-auto">
+                        <div class=" flex flex-wrap flex-col-2  pt-10 pb-10 ">
+
+                            <div class="w-full lg:w-8/12 px-5 mt-10 lg:pl-20 ">
+                                <div class=" border-tedpink border-l-6 pl-5">
+                                    <h3 class="text-3xl font-bold font-body text-left text-secondary uppercase ">
+                                        External awards
+                                    </h3>
+                                    <p class="text-base-custom font-body text-left text-secondary">there are lots of external
+                                        awards and a comprehensive list of these is available on the Trust intranet
+                                    </p>
+                                </div>
+
+                            </div>
+
+                            <div class="w-full lg:w-3/12 ">
+                                <a href="#">
+                                    <div
+                                        class="hover:-mt-4 relative flex flex-col min-w-0 break-words w-full mb-6  ease-linear transition-all duration-150 px-20 md:px-40 lg:px-14">
+                                        <img alt="..." class="align-middle border-none max-h-full h-auto rounded-full"
+                                            src="img/understandWhat.png" />
+                                    </div>
+                                </a>
+
+                            </div>
+                        </div>
+                        <div class="justify-center flex flex-wrap">
+                            <div class="border-tedpink border-b-3 h-10 w-11/12 mb-10 "></div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="container mx-auto">
+                        <div class=" flex flex-wrap flex-col-2  pt-10 pb-10 ">
+                            <div class="w-full lg:w-3/12 ">
+                                <a href="#">
+                                    <div
+                                        class="hover:-mt-4 relative flex flex-col min-w-0 break-words w-full mb-6  ease-linear transition-all duration-150 px-20 md:px-40 lg:px-14">
+                                        <img alt="..." class="align-middle border-none max-h-full h-auto rounded-full"
+                                            src="img/understandWhat.png" />
+                                    </div>
+                                </a>
+
+                            </div>
+                            <div class="w-full lg:w-8/12 px-5 mt-10 lg:pl-20 ">
+                                <div class=" border-tedpink border-l-6 pl-5">
+                                    <h3 class="text-3xl font-bold font-body text-left text-secondary uppercase ">
+                                        Employee of the month scheme
+                                    </h3>
+                                    <p class="text-base-custom font-body text-left text-secondary">Why not set up an employee of
+                                        the month scheme? Decide on what you want to recognise, for example is it
+                                        someone who has gone the extra mile or perhaps someone who has really
+                                        demonstrated the values? Let the team know how they can nominate someone for the
+                                        employee of the month. Decide on how you will judge nominations, for example
+                                        will you have a judging panel or will the manager simply pick the winner? Let
+                                        the team know who has won employee of the month? Give them a certificate or a
+                                        box of chocolates or find your way of saying well done
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section>
+
+            <div class="z-0  bg-tedgray relative flex flex-col min-w-0 break-words w-full ">
+                <div class="container mx-auto">
+                    <div class="justify-center flex flex-wrap">
+
+                        <div class="w-full md:w-12/12 px-4 m-10">
+                            <div class=" border-tedpink border-l-6 pl-5">
+                                <h3 class="text-3xl font-bold font-body text-left text-secondary uppercase ">
+                                    Planned mechanisms
+                                </h3>
+                                <p class="text-base-custom font-body text-left text-secondary">Schedule team meetings where you
+                                    can review and share team successes - Ideas on how to celebrate success.
+
+                                </p>
+
+                            </div>
+
+                            <div class="py-10">
+
+
+                                <button
+                                    class="text-white font-body text-left text-base shadow-md  bg-tedpink hover:bg-tedpinkHover border-solid border-pink-500 hover:text-white active:bg-pink-600 font-bold  px-24 lg:px-32 py-3 rounded-full outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                                    type="button">
+                                    Click here
+                                </button>
+
+                            </div>
+
+                            <p class="text-base-custom font-body text-left text-secondary">Schedule a team away day or annual
+                                review and ask the following questions:
+
+                            </p>
+                        </div>
+
+
+
+
+                    </div>
+
+                </div>
+                <div class="container mx-auto ">
+                    <div class="flex flex-wrap justify-between pb-10">
+                        <div class=" w-full md:w-1/2 px-4 text-center pl-14">
+                            <div
+                                class="relative flex flex-col min-w-0 break-words bg-white full mb-8 shadow-lg rounded-lg">
+                                <div class="px-4 py-5 flex-auto border-tedpink border-t-4">
+                                    <div class="mx-10">
+
+                                        <ul class="text-left list-disc text-base list-outside text-tedblueDark ">
+
+                                            <li class="py-1 ">
+                                                What have we done to contribute towards the achievement?</li>
+                                            <li class="py-1">
+                                                What have we done to contribute towards the achievement?</li>
+                                            <li class="py-1">
+                                                Where is there still work to do?</li>
+                                            <li class="py-1"> 
+                                                What has got in our way or what is getting in our way?</li>
+                                            <li class="py-1">
+                                                What do we need to focus on over the next 12 months, or 3 years?</li>
+                                        </ul>
+
+                                        <br>
+
+
+
+
+                                    </div>
+                                    <p class="text-base-custom font-body text-left text-secondary">Use <b> appraisals </b>to give
+                                        someone praise and feedback on how they are doing</p>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="w-full"> <img class="object-contain sm:object-scale-down h-full w-full" src="img/3staff.jpg"
+                    alt=""></div>
+        </section>
+
+        <section>
+            <div class="z-0  bg-white relative flex flex-col min-w-0 break-words w-full pb-20">
+                
+                <div class="container mx-auto">
+
+
+                    <div class="justify-center flex flex-wrap">
+                        <div class="w-full md:w-12/12 px-4 m-10">
+                            <div class=" border-tedpink border-l-6 pl-5">
+                                <h3 class="text-3xl font-bold font-body text-left text-secondary uppercase ">
+                                    One to one meeting
+                                </h3>
+                                <p class="text-base-custom font-body text-left text-secondary">Use <b>one to one meetings</b> with team
+                                    members to give praise and feedback on how they are doing.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="justify-center flex flex-wrap ">
+                        <div class="w-full md:w-12/12 px-4 m-10 border-tedpink border-b-3">
+                            <div class="flex flex-wrap overflow-hidden">
+
+                                <div class="lg:w-1/2 lg:overflow-hidden">
+                                  <!-- Column Content -->
+                                  <div class="lg:w-full mx-10 pb-10 lg:pb-0">
+                                    <h3 class="text-2xl font-bold font-body text-left text-secondary uppercase ">You can ask them questions such as:</h3>
+                                    <br>
+                                    <p class="text-xl font-body text-left font-bold text-secondary break-words">What has
+                                        gone well for you?</p>
+    
+                                    <p class="text-xl font-body text-left font-bold text-secondary break-words">What are
+                                        you proud of?</p>
+                                </div>
+                                </div>
+                              
+                                <div class="lg:w-1/2 lg:overflow-hidden pb-10">
+                                  <!-- Column Content -->
+                                  <div class="flex flex-wrap justify-center gap-10 lg:flex-row flex-col  mx-20">
+
+
+                                    <button
+                                        class="text-white font-body text-center text-base shadow-md  bg-tedpink hover:bg-tedpinkHover border-solid border-pink-500 hover:text-white active:bg-pink-600 font-bold  lg:px-16 py-3 rounded-full outline-none focus:outline-none  ease-linear transition-all duration-150"
+                                        type="button">
+                                        Click here for a template
+                                    </button>
+                                    <button
+                                        class="text-white font-body text-center text-base shadow-md  bg-tedpink hover:bg-tedpinkHover border-solid border-pink-500 hover:text-white active:bg-pink-600 font-bold  lg:px-12 py-3 rounded-full outline-none focus:outline-none  ease-linear transition-all duration-150"
+                                        type="button">
+                                        How to give memorable praise
+                                    </button>
+                                    <button
+                                        class="text-white font-body text-center text-base shadow-md  bg-tedpink hover:bg-tedpinkHover border-solid border-pink-500 hover:text-white active:bg-pink-600 font-bold  lg:px-20 py-3 rounded-full outline-none focus:outline-none  ease-linear transition-all duration-150"
+                                        type="button">
+                                        Giving feedback tips
+                                    </button>
+                                </div>
+                                </div>
+                              
+                              </div>
+
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section>
+            <div class="z-0  bg-tedblue300 relative flex flex-col min-w-0 break-words w-full">
+
+                <div class="container mx-auto flex lg:flex-nowrap flex-wrap">
+
+                    <div class=" px-4 m-10  ">
+                        <div class=" border-white border-l-6 pl-5">
+                            <h3 class="text-5xl font-bold font-body text-left text-white uppercase ">
+                                TOP TIPS <br> Giving feedback
+                            </h3>
+
+                        </div>
+
+
+                        <div class="w-full pt-5 lg:ml-6 ">
+
+                            <p class="text-base-custom  text-white font-normal font-body">Why not pick a day where you will say
+                                thank you <br> to the team and encourage the team to say thank you <br> to each other.
+                                To do this
+                                pick a day, visit the team and say <br> thank you in person. </p><br>
+
+                            <p class="text-base-custom font-base  text-white">Perhaps put compliments or thank you cards <br>
+                                received up on the ward. You could write a <br> personal thank you to each member of the
+                                team <br>
+                                and encourage the team to do the same. <br> Maybe you could buy cakes or flowers? </p>
+                            <br>
+                            <p class="text-base-custom font-base  text-white">Why not celebrate the event by sharing it <br> on
+                                social media. </p>
+
+
+                        </div>
+                    </div>
+                    <div class="bg-white py-4 px-10 w-full lg:w-1/3  lg:ml-40">
+                        <div class="flex justify-center items-center text-center">
+                            <div class="font-body text-left">
+                                <p class="text-2xl uppercase text-secondary font-semibold">Staff Survey</p>
+                                <p class="text-base text-secondary">You can use the staff survey to look at the positive
+                                    things staff say about working in your team or service area. Click here for
+                                    the manager toolkit.</p>
+                                <br>
+                                <p class="text-2xl uppercase text-secondary font-semibold">Staff Friends
+                                    and Family Test
+                                </p>
+                                <p class="text-base text-secondary">These happen quarterly, make sure you feedback the
+                                    results to your team and share any compliments
+                                    received</p> <br>
+                                <p class="text-2xl uppercase text-secondary font-semibold">Friends and Family Test
+                                </p>
+                                <p class="text-base text-secondary">Share the results and positive feedback from patient
+                                    feedback</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-full"> <img class="" src="img/3staff.jpg" alt=""></div>
+
+            </div>
+        </section>
+        <section>
+
+            <div class="z-0  bg-tedgray relative flex flex-col min-w-0 break-words w-full ">
+                <div class="container mx-auto">
+                    <div class="justify-center flex flex-wrap">
+
+                        <div class="w-full md:w-12/12 px-4 m-10">
+                            <div class=" border-tedpink border-l-6 pl-5">
+                                <h3 class="text-3xl font-bold font-body text-left text-secondary uppercase ">
+                                    making a difference
+                                </h3>
+                                <p class="text-base-custom font-body text-left text-secondary">Use this tool to build
+                                    recognistion for the contribution team mambers make. It can help create a sesne of
+                                    pride and appreciation for each other.
+
+                                </p>
+
+                            </div>
+
+                            <div class="py-10">
+
+
+                                <button
+                                    class="text-white font-body text-left text-base shadow-md  bg-tedpink hover:bg-tedpinkHover border-solid border-pink-500 hover:text-white active:bg-pink-600 font-bold  px-24 py-3 rounded-full outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                                    type="button">
+                                   Toolkit
+                                </button>
+
+                            </div>
+
+                           
+                        </div>
+
+
+
+
+                    </div>
+
+                </div>
+
+            </div>
+           
+        </section>
+
+        <!-- Your Trust -->
+        <section>
+            <div class="z-0  bg-white relative flex flex-col min-w-0 break-words w-full mb-8">
+                <div class="container mx-auto px-6">
+                    <div class="justify-end flex flex-wrap">
+                        <div class="w-full lg:w-12/12 py-5 flex justify-between lg:pt-10 px-10">
+                            <div class=" border-tedpink border-l-6 pl-5">
+                                <h3 class="text-5xl font-bold uppercase font-body text-left text-secondary uppercase ">
+                                    your trust
+                                </h3>
+                            </div>
+
+                            <div class="invisible lg:visible">
+                                <img alt="..." class="max-w-full" " src=" img/company-logo.png">
+                            </div>
+
+                        </div>
+                        <div class="">
+                            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-5">
+
+                                <div class="w-full px-10 lg:pl-8 lg:px-40">
+
+                                    <p class="text-xl  text-secondary font-semibold font-body">Lorem ipsum dolor sit
+                                        amet, consectetur
+                                        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                        aliqua. Ut enim ad minim
+                                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                        consequat.</p><br>
+                                    <p class="text-lg  text-secondary">Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit, sed do
+                                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                        veniam, quis nostrud
+                                        exercitation.</p>
+                                </div>
+
+                                <div class="w-full bg-gray-50 p-8">
+
+                                    <p class="text-base text-secondary text-left">Lorem ipsum dolor sit amet,
+                                        consectetur adipiscing
+                                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                                        ad minim veniam,
+                                        quis nostrud exercitation it enim ad minim veniam.</p>
+                                    <br>
+                                    <div class="grid grid-cols-2 gap-4">
+                                        <div>
+                                            <ul
+                                                class="text-lg text-secondary uppercase font-body font-semibold list-none text-left">
+                                                <li class="my-2"><a href="">LINK 1 ></a></li>
+                                                <li class="my-2"><a href="">LINK 2 ></a></li>
+                                                <li class="my-2"><a href="">LINK 3 ></a></li>
+                                                <li class="my-2"><a href="">LINK 4 ></a></li>
+                                                <li class="my-2"><a href="">LINK 5 ></a></li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <ul
+                                                class="text-lg text-secondary uppercase font-body font-semibold list-none text-left">
+                                                <li class="my-2"><a href="">LINK 6 ></a></li>
+                                                <li class="my-2"><a href="">LINK 7 ></a></li>
+                                                <li class="my-2"><a href="">LINK 8 ></a></li>
+                                                <li class="my-2"><a href="">LINK 9 ></a></li>
+                                                <li class="my-2"><a href="">LINK 10 ></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+    </main>
+</div>
+    <!-- Footer -->
+    <footer class="footer bg-white relative pt-5 pb-5  border-gray-50 border-t-2">
+        <div class="container px-4 mx-auto flex flex-wrap items-center justify-between ">
+            <div class="w-full relative flex justify-center lg:w-auto lg:static lg:block lg:justify-start">
+                <div class="flex-shrink-0 flex items-center">
+                    <div class="flex flex-col">
+                        <span class="font-body place-items-start text-secondary text-sm mb-2">2021 TED All rights
+                            reserved</span>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="lg:flex flex-grow items-center bg-white lg:bg-opacity-0 lg:shadow-none "
+                id="example-collapse-navbar">
+
+                <ul class=" flex flex-col lg:flex-row list-none lg:ml-auto items-center ">
+
+                    <li class="flex items-center px-2">
+                        <button
+                            class="flex items-center text-sm  font-body font-bold leading-snug  text-secondary hover:opacity-50 hover:text-secondary  px-3 py-2 rounded-full"
+                            type="button">
+                            HELP & SUPPORT
+                        </button>
+                    </li>
+                    <li class="flex items-center px-2">
+                        <button
+                            class="flex items-center text-sm  font-body font-bold leading-snug bg-tedpink text-white hover:opacity-50 hover:text-white  px-3 py-2 rounded-full"
+                            type="button">
+                            Back to top
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<!-- Script -->
+<script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+<script>
+
+    /* Function for opning navbar on mobile */
+    function toggleNavbar(collapseID) {
+        document.getElementById(collapseID).classList.toggle("hidden");
+        document.getElementById(collapseID).classList.toggle("block");
+    }
+    /* Function for dropdowns */
+    function openDropdown(event, dropdownID) {
+        let element = event.target;
+        while (element.nodeName !== "A") {
+            element = element.parentNode;
+        }
+        Popper.createPopper(element, document.getElementById(dropdownID), {
+            placement: "bottom-start",
+        });
+        document.getElementById(dropdownID).classList.toggle("hidden");
+        document.getElementById(dropdownID).classList.toggle("block");
+    }
+
+
+    /* Javascript to close the radio button version by clicking it again */
+    var myRadios = document.getElementsByName('tabs2');
+    var setCheck;
+    var x = 0;
+    for (x = 0; x < myRadios.length; x++) {
+        myRadios[x].onclick = function () {
+            if (setCheck != this) {
+                setCheck = this;
+            } else {
+                this.checked = false;
+                setCheck = null;
+            }
+        };
+    }
+</script>
+
+</html>

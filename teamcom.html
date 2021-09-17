@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../public/vendor/@fortawesome/fontawesome-free/css/all.min.css" />
   <link rel="stylesheet" href="styles.css">
+  <link href="https://unpkg.com/tailwindcss@2.1.4/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
   <title>TED - Team Communication</title>
 </head>
 
@@ -18,8 +20,7 @@
       <div class=" w-full mx-auto px-5 flex flex-wrap ">
         <div class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
           <div class="flex-shrink-0 flex items-center">
-           
-            <img class="hidden lg:block h-14 w-auto" src="img/logo.svg" alt="Workflow">
+            <img class="lg:block h-14 w-auto" src="img/logo.svg" alt="Workflow">
           </div>
           <button
             class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
@@ -74,27 +75,211 @@
       </div>
     </nav>
   </header>
+                <!-- Sidebar -->
+                <div
+                class="fixed flex flex-col top-14 left-0 w-14 hover:w-64 md:w-64 bg-tedblueDark dark:bg-gray-900 h-full text-white transition-all duration-300 border-none z-10 sidebar mr-5 ">
+                <div
+                    class="overflow-y-auto overflow-x-hidden flex flex-col justify-between flex-grow scrollbar-none scrollbar-thumb-tedblueDark scrollbar-track-white h-32 overflow-y-scroll  ">
+                    <ul class="flex flex-col py-4 space-y-1 font-body ">
+                        <li class="px-5 hidden md:block">
+                            <div class="flex flex-row items-center h-8">
+                                <div class="text-sm font-light tracking-wide text-gray-400 uppercase"></div>
+                            </div>
+                        </li>
+                        <li>
+        
+
+                <li>
+                    <a href="public/dashboard.html" target="_blank"
+                        class="relative flex flex-row items-center h-11 focus:outline-none hover:bg-tedpink text-white hover:text-white border-l-4 border-transparent pr-6">
+                        <span class="inline-flex justify-center items-center ml-4">
+                            <i class="fas fa-home"></i>
+                        </span>
+                        <span class="ml-2 text-sm tracking-wide truncate">TED DASHBOARD</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="devcontent.html" target="_blank"
+                        class="relative flex flex-row items-center h-11 focus:outline-none hover:bg-tedpink text-white hover:text-white border-l-4 border-transparent pr-6">
+                        <span class="inline-flex justify-center items-center ml-4">
+                          <i class="fas fa-sitemap"></i>
+                        </span>
+                        <span class="ml-2 text-sm tracking-wide truncate">DEVELOPMENT CONTENT</span>
+                    </a>
+                </li>
+        
+                <li class="px-5 hidden md:block">
+                    <div class="flex flex-row items-center mt-5 h-8">
+                        <div class="text-sm font-light tracking-wide text-white uppercase">QUICK LINKS:</div>
+                    </div>
+                </li>
+                <li >
+                    <a 
+                        class=" relative flex flex-row items-center h-11 focus:outline-none  hover:bg-tedpink bg-tedpink text-white hover:text-white border-l-4 border-transparent pr-6">
+                        <span class="inline-flex justify-center items-center ml-4">
+                          <span class='icon-tm'></span>
+                        </span>
+                        <span class="ml-2 text-sm tracking-wide truncate">Team Communication</span>
+
+                        <div class="after: left-60 absolute z-5 pl-1"><i class="fas fa-caret-left text-white text-6xl"></i></div>
+                    </a>
+                </li>
+                <li>
+                
+                    <a href="workingwithothers.html" target="_blank"
+                        class="relative flex flex-row items-center h-11 focus:outline-none hover:bg-tedpink text-white hover:text-white border-l-4 border-transparent pr-6">
+                        <span class="inline-flex justify-center items-center ml-4">
+                          <span class='icon-wo'></span>
+                        </span>
+                        <span class="ml-2 text-sm tracking-wide truncate">Working With Other Teams</span>
+                    </a>
+                </li>
+                                
+                <li>
+                    <a href="teampurpose.html" target="_blank"
+                        class="relative flex flex-row items-center h-11 focus:outline-none hover:bg-tedpink text-white hover:text-white border-l-4 border-transparent pr-6">
+                        <span class="inline-flex justify-center items-center ml-4">
+                          <span class='icon-tp'></span>
+                        </span>
+                        <span class="ml-2 text-sm tracking-wide truncate">Team Purpose</span>
+                    </a>
+                </li>
+                <li >
+                  <div class="after:empty-content"></div>
+                    <a href="leadership.html" target="_blank"
+                        class="relative flex flex-row items-center h-11 focus:outline-none hover:bg-tedpink text-white hover:text-white border-l-4 border-transparent pr-6">
+                        <span class="inline-flex justify-center items-center ml-4">
+                          <span class='icon-ld'></span>
+                        </span>
+                        <span class="ml-2 text-sm tracking-wide truncate">Leadership</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="valuingindividuals.html" target="_blank"
+                        class="relative flex flex-row items-center h-11 focus:outline-none hover:bg-tedpink text-white hover:text-white border-l-4 border-transparent pr-6">
+                        <span class="inline-flex justify-center items-center ml-4">
+                          <span class='icon-vi'></span>
+                        </span>
+                        <span class="ml-2 text-sm tracking-wide truncate">Valuing Individuals</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="engagement.html" target="_blank"
+                        class="relative flex flex-row items-center h-11 focus:outline-none hover:bg-tedpink text-white hover:text-white border-l-4 border-transparent pr-6">
+                        <span class="inline-flex justify-center items-center ml-4">
+                          <span class='icon-eg'></span>
+                        </span>
+                        <span class="ml-2 text-sm tracking-wide truncate">Engagement</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="reviewcelebratesuccess.html" target="_blank"
+                        class="relative flex flex-row items-center h-11 focus:outline-none hover:bg-tedpink text-white hover:text-white border-l-4 border-transparent pr-6">
+                        <span class="inline-flex justify-center items-center ml-4">
+                          <span class='icon-rc'></span>
+                        </span>
+                        <span class="ml-2 text-sm tracking-wide truncate">Review & Celebrate Success</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="workingtogether.html" target="_blank"
+                        class="relative flex flex-row items-center h-11 focus:outline-none hover:bg-tedpink text-white hover:text-white border-l-4 border-transparent pr-6">
+                        <span class="inline-flex justify-center items-center ml-4">
+                          <span class='icon-wt'></span>
+                        </span>
+                        <span class="ml-2 text-sm tracking-wide truncate">Working Together</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="public/teamengagement.html" target="_blank"
+                        class="relative flex flex-row items-center h-11 focus:outline-none hover:bg-tedpink text-white hover:text-white border-l-4 border-transparent pr-6">
+                        <span class="inline-flex justify-center items-center ml-4">
+                          <span class='icon-te'></span>
+                        </span>
+                        <span class="ml-2 text-sm tracking-wide truncate">Team Engagement</span>
+                    </a>
+                </li>
+                <li class="px-5 hidden md:block">
+                    <div class="flex flex-row items-center h-8">
+                        <div class="text-sm font-light tracking-wide border border-tedgray border-b-1 w-full uppercase"></div>
+                    </div>
+                </li>
+                <li>
+                    <a href="#"
+                        class="relative flex flex-row items-center h-11 focus:outline-none hover:bg-tedpink text-white hover:text-white border-l-4 border-transparent pr-6">
+                        <span class="inline-flex justify-center items-center ml-4">
+                          <i class="fas fa-info-circle"></i>
+                        </span>
+                        <span class="ml-2 text-sm tracking-wide truncate">About TED</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="relative flex flex-row items-center h-11 focus:outline-none hover:bg-tedpink text-white hover:text-white border-l-4 border-transparent pr-6">
+                        <span class="inline-flex justify-center items-center ml-4">
+                          <i class="far fa-question-circle"></i>
+                        </span>
+                        <span class="ml-2 text-sm tracking-wide truncate">Help & Support</span>
+                    </a>
+                </li>
+                </ul>
+                <ul class="flex flex-col py-1 space-y-1 bg-white font-body text-base font-thin ">
+        
+                    <li class="">
+                        <a href="#"
+                            class="relative flex flex-row items-center h-11 focus:outline-none hover:bg-tedpink text-tedblueDark hover:text-white border-l-4 border-transparent pr-6">
+                            <span class="inline-flex justify-center items-center ml-4  ">
+                                <i class="fas fa-user"></i>
+                            </span>
+                            <span class="ml-2 text-sm tracking-wide truncate">ADMINISTRATOR</span>
+                        </a>
+                    </li>
+                    <hr>
+
+                    <li>
+                        <a href="#"
+                            class="relative flex flex-row items-center h-10 focus:outline-none text-white-600 hover:text-white-800 border-l-4 ">
+                            <span class="inline-flex justify-center items-center ">
+        
+                            </span>
+                            <input type="search" name="" id="" placeholder="SEARCH SURVEYS"
+                                class="w-full pl-3 text-sm text-black outline-none focus:outline-none bg-transparent" />
+                            <i class="fas fa-search bg-tedblue py-4 px-4"></i>
+                        </a>
+                    </li>
+        
+        
+                </ul>
+                <ul class="flex flex-col py-1 space-y-1 pb-40">
+        
+                </ul>
+        
+            </div>
+            </div>
+            <!-- ./Sidebar -->
   <!-- Main content -->
-  <main class="relative">
-    <!-- Intro section -->
+  <div class="h-full ml-14 mt-14 mb-10 md:ml-64 relative z-0">
+  <main class="overflow-hidden ">
+    <!-- Intro -->
     <section class="">
       <div class="flex bg-white w-full z-0">
 
-        <div class="my-40 w-1/2">
-          <div class="ml-20 px-10">
-            <h3 class="text-6xl font-bold font-body text-left text-secondary tracking-wider uppercase">
+        <div class="mt-10 mb-20 w-full sm:w-full">
+          <div class="sm:ml-0 px-10 lg:px-20 ">
+            <h3
+              class="text-3xl lg:text-6xl md:text-6xl font-extrabold font-body text-left text-secondary tracking-wider uppercase">
               Team<br>Communication
             </h3>
             <br>
-            <h3 class="text-tedpink font-body font-semibold text-xl text-left">Does your team communicate effectively
+            <h3 class="text-tedpink font-body font-extrabold text-2xl text-left">Does your team communicate effectively
               with each other to achieve the team task? Does your team make decisions effectively?</h3>
             <br>
-            <h3 class="text-secondary font-body text-lg text-left">This section explores team communication and team
+            <h3 class="text-secondary font-body text-lg-custom font-normal text-left">This section explores team communication and team
               decision making. Communication is an important aspect of any team. Effective communication can greatly
               improve the team’s outcomes. In addition people feel more engaged and motivated when communication is
               effective.</h3>
             <br>
-            <div class="">
+            <div class="pr-5">
               <h6
                 class="bg-tedpink text-white font-semibold uppercase text-sm py-3 px-5 text-center rounded-full px-1 rounded-lg">
                 Select the buttons below to view supporting materials
@@ -102,17 +287,16 @@
             </div>
           </div>
         </div>
-        <div class="w-11/12"> <img class="flex h-full w-full object-cover" src="img/teamcomBG.jpg" alt=""></div>
+        <div class="w-full flex lg:flex  hidden sm:hidden "> <img class="flex h-full w-full object-cover"
+            src="img/teamcomBG.jpg" alt=""></div>
 
       </div>
     </section>
-    <!-- Why communication section -->
+    <!-- Effective team communication section -->
     <section>
-
-      <div class="z-0  bg-gray-200 relative flex flex-col min-w-0 break-words w-full mb-4">
+      <div class="z-0  bg-gray-200 relative flex flex-col min-w-0 break-words w-full mb-2">
         <div class="container mx-auto">
           <div class="justify-center flex flex-wrap">
-
             <div class="w-full lg:w-12/12 px-4 m-10">
               <div class="mb-10 border-tedpink border-l-6 pl-5">
                 <h3 class="text-3xl font-bold font-body text-left text-secondary uppercase ">
@@ -123,7 +307,7 @@
                 <div class="w-full lg:w-4/12 ">
                   <a href="#">
                     <div
-                      class="hover:-mt-4 relative flex flex-col min-w-0 break-words w-full mb-6  ease-linear transition-all duration-150 px-14">
+                      class="hover:-mt-4 relative flex flex-col min-w-0 break-words w-full mb-6  ease-linear transition-all duration-150 px-8 md:px-40 lg:px-14">
                       <img alt="..." class="align-middle border-none max-h-full h-auto rounded-full"
                         src="img/safeClimate.png" />
                     </div>
@@ -136,20 +320,20 @@
                 <div class="w-full lg:w-4/12">
                   <a href="#">
                     <div
-                      class="hover:-mt-4 relative flex flex-col min-w-0 break-words w-full mb-6  ease-linear transition-all duration-150 px-14">
+                      class="hover:-mt-4 relative flex flex-col min-w-0 break-words w-full mb-6  ease-linear transition-all duration-150 px-8 md:px-40 lg:px-14">
                       <img alt="..." class="align-middle border-none max-w-full h-auto rounded-full"
                         src="img/teamMem.png" />
                     </div>
                   </a>
                   <h5 class="text-lg font-bold pb-4 text-center text-tedpink uppercase">
-                    Team members to interact and participate in communication
+                    Team members to interact and <br> participate in communication
                   </h5>
                 </div>
 
                 <div class="w-full lg:w-4/12 ">
                   <a href="#">
                     <div
-                      class="hover:-mt-4 relative flex flex-col min-w-0 break-words w-full mb-6  ease-linear transition-all duration-150 px-14">
+                      class="hover:-mt-4 relative flex flex-col min-w-0 break-words w-full mb-6  ease-linear transition-all duration-150 px-8 md:px-40 lg:px-14">
                       <img alt="..." class="align-middle border-none max-w-full h-auto rounded-full"
                         src="img/infoSharing.png" />
                     </div>
@@ -160,58 +344,67 @@
                 </div>
               </div>
             </div>
-            <div class="grid grid-cols-2 gap-4 m-5 border-tedpink border-b-3">
+            <div
+              class="grid grid-flow-col grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 grid-rows-1 gap-4 m-1 lg:m-5 border-tedpink border-b-0 lg:border-b-3">
               <div class="w-full pb-5 px-10">
-                <p class="text-secondary font-body font-bold">Team communication is about sharing information,
+                <p class="text-secondary font-body font-bold text-base-custom">Team communication is about sharing information,
                   providing feedback and sharing ideas. It is a key
                   feature of team effectiveness.</p>
-                <p class="text-secondary font-body font-normal">Effective team communication can help ensure there are
+                <p class="text-secondary font-body font-normal text-base-custom">Effective team communication can help ensure there are
                   no misunderstandings. It helps to organise the
                   team and give clarity on work objectives. Effective communication can also improve confidence levels
                   among team members to share ideas or raise concerns.</p>
               </div>
               <!-- ... -->
-              <div class="my-10  space-x-10 font-body flex flex-nowrap justify-center absolute bottom-0 right-40 ">
-                <button
-                  class="bg-tedpink text-white font-semibold text-sm py-3 px-5 text-center rounded-full px-1 shadow-lg ">
-                  Top tips for communication
-                </button>
-                <button
-                  class="bg-tedpink text-white font-semibold  text-sm py-3 px-5 text-center rounded-full px-1 shadow-lg ">
-                  Example questions
-                </button>
-              </div>
+
             </div>
 
+            <div class="border-tedpink border-b-3 h-10 w-11/12 mb-10 "></div>
+            <div class="flex flex-wrap justify-center gap-10 pb-10 mb-10  xl:flex-row flex-col mx-20 lg:absolute lg:bottom-0 lg:right-0 ">
+              <button
+                class="text-white font-body text-center text-base shadow-md  bg-tedpink hover:bg-tedpinkHover border-solid border-pink-500 hover:text-white active:bg-pink-600 font-bold  px-10 py-3 rounded-full outline-none focus:outline-none  ease-linear transition-all duration-150"
+                type="button">
+                Top tips for communication
+              </button>
+              <button
+                class="text-white font-body text-center text-base shadow-md  bg-tedpink hover:bg-tedpinkHover border-solid border-pink-500 hover:text-white active:bg-pink-600 font-bold  px-10 py-3 rounded-full outline-none focus:outline-none  ease-linear transition-all duration-150"
+                type="button">
+                Example questions
+              </button>
+              
+            </div>
+            
+           
+
           </div>
+          
         </div>
       </div>
     </section>
-    <!-- Effective team communication section -->
-
     <!-- Regular team meetings section -->
     <section>
-      <div class="w-full"> <img class="flex h-full w-full object-cover" src="img/staffTogether.jpg" alt=""></div>
+      <div class="w-full"> <img class="object-contain sm:object-scale-down h-full w-full" src="img/staffTogether.jpg"
+          alt=""></div>
       <div class="z-0  bg-white relative flex flex-col min-w-0 break-words w-full mb-8">
         <div class="container mx-auto">
           <div class="justify-center flex flex-wrap">
 
-            <div class="w-full lg:w-12/12 px-4 m-10">
+            <div class="w-full md:w-12/12 px-4 m-10">
               <div class=" border-tedpink border-l-6 pl-5">
                 <h3 class="text-3xl font-bold font-body text-left text-secondary uppercase ">
                   Do you hold regular and effective team meetings?
                 </h3>
-                <p class="text-lg font-body text-left text-secondary">Effective teams meet regularly to share
+                <p class="text-base-custom font-body text-left text-secondary">Effective teams meet regularly to share
                   information, suggest ideas and review work. It is best practice to schedule a meeting every six weeks.
                 </p>
               </div>
 
             </div>
             <div class="m-5 border-tedpink border-b-3">
-              <div class="grid grid-cols-2 gap-8 px-24 mb-5">
-                <div class="w-full">
+              <div class="grid grid-cols-1 grid lg:grid-cols-2 gap-8 px-5  mb-5">
+                <div class="w-full lg:px-14">
                   <h3 class="text-2xl font-bold font-body text-left text-secondary">Team Huddles</h3><br>
-                  <p class="text-lg font-body text-left text-secondary  ">Build time into the day for a 10 minute team
+                  <p class="text-base-custom font-body text-left text-secondary  ">Build time into the day for a 10 minute team
                     huddle. You can use this chance to rally everyone for tasks ahead and give the team opportunity to
                     ask questions or raise concerns.
                     <br>
@@ -221,11 +414,11 @@
                     issues at once.
                   </p>
                 </div>
-                <div class="w-full">
+                <div class="w-full lg:px-14">
                   <h3 class="text-2xl font-bold font-body text-left text-secondary">Do you meet regularly with
-                    individual members of the team?</h3>
+                    individual <br> members of the team?</h3>
                   <br>
-                  <p class="text-lg font-body text-left text-secondary">Make sure you schedule time in with individual
+                  <p class="text-base-custom font-body text-left text-secondary">Make sure you schedule time in with individual
                     team members to meet with you on a one to one basis.
                     <br>
                     <br>
@@ -234,19 +427,19 @@
                   </p>
                 </div>
               </div>
-              <div class="flex flex-wrap justify-center gap-10 pb-10">
+              <div class="flex flex-wrap justify-center gap-10 pb-10 pt-10  lg:flex-row flex-col mx-20">
                 <button
-                  class="text-white font-body text-center text-sm shadow-md  bg-tedpink hover:bg-tedpink border-solid border-pink-500 hover:text-white active:bg-pink-600 font-bold  px-10 py-3 rounded-full outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                  class="text-white font-body text-center text-base shadow-md  bg-tedpink hover:bg-tedpinkHover border-solid border-pink-500 hover:text-white active:bg-pink-600 font-bold  px-10 py-3 rounded-full outline-none focus:outline-none  ease-linear transition-all duration-150"
                   type="button">
                   Example team meeting agenda
                 </button>
                 <button
-                  class="text-white font-body text-center text-sm shadow-md  bg-tedpink hover:bg-tedpink border-solid border-pink-500 hover:text-white active:bg-pink-600 font-bold  px-10 py-3 rounded-full outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                  class="text-white font-body text-center text-base shadow-md  bg-tedpink hover:bg-tedpinkHover border-solid border-pink-500 hover:text-white active:bg-pink-600 font-bold  px-10 py-3 rounded-full outline-none focus:outline-none  ease-linear transition-all duration-150"
                   type="button">
                   Running effective meetings
                 </button>
                 <button
-                  class="text-white font-body text-center text-sm shadow-md  bg-tedpink hover:bg-tedpink border-solid border-pink-500 hover:text-white active:bg-pink-600 font-bold  px-10 py-3 rounded-full outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                  class="text-white font-body text-center text-base shadow-md  bg-tedpink hover:bg-tedpinkHover border-solid border-pink-500 hover:text-white active:bg-pink-600 font-bold  px-10 py-3 rounded-full outline-none focus:outline-none  ease-linear transition-all duration-150"
                   type="button">
                   Team Meeting Evaluation
                 </button>
@@ -258,32 +451,30 @@
         </div>
       </div>
     </section>
-    <!--Team Huddles section  -->
+    <!-- Develop opportunities  -->
     <section>
-      <div class="z-0  bg-gray-200 relative flex flex-col min-w-0 break-words w-full">
-
+      <div class="z-0  bg-tedgray relative flex flex-col min-w-0 break-words w-full">
         <div class="container mx-auto">
           <div class="justify-center flex flex-wrap">
-
-            <div class="w-full lg:w-12/12 px-4 m-10">
+            <div class="w-full md:w-12/12 px-4 m-10">
               <div class=" border-tedpink border-l-6 pl-5">
                 <h3 class="text-3xl font-bold font-body text-left text-secondary uppercase ">
                   Develop opportunities to suggest ideas and provide feedback
                 </h3>
-                <p class="text-lg font-body text-left text-secondary">Make sure you build in feedback mechanisms so that
+                <p class="text-base-custom font-body text-left text-secondary">Make sure you build in feedback mechanisms so that
                   the team can generate ideas and solutions.</p>
               </div>
             </div>
-            <div class="flex flex-row justify-center gap-20 ">
+            <div class="flex flex-wrap justify-center gap-20  px-20  ">
               <div class="bg-white py-4 px-4  rounded-full border-gray-300 border-2">
                 <div class="flex justify-center items-center text-center h-64 w-64 ">
                   <div class="font-body ">
                     <p class="uppercase text-tedblue300 font-semibold ">Staff Survey <br> Manager toolkit</p>
                     <br>
-                    <p class="text-1xl text-tedblueDark">Make use of the staff survey to have conversations with the
-                      team about what changes you can make to improve practice or develop staff.</p>
+                    <p class="text-1xl text-tedblueDark">Make use of the staff survey to <br> have conversations with the <br>
+                      team about what changes you <br> can make to improve practice or <br> develop staff.</p>
                     <br>
-                    <button class="bg-tedgray px-5 py-1 rounded-xl font-bold text-tedblue300">Open ></button>
+                    <button class="bg-tedgray px-5 py-1 rounded-xl font-bold text-tedblueDark uppercase ">Open ></button>
                   </div>
                 </div>
               </div>
@@ -292,38 +483,38 @@
                   <div class="font-body ">
                     <p class="uppercase text-tedpink font-semibold ">Our Change</p>
                     <br>
-                    <p class="text-1xl text-tedblueDark">A tool that brings the team together to discuss issues, ideas
+                    <p class="text-1xl text-tedblueDark px-3">A tool that brings the team together to discuss issues, ideas
                       and solutions. The focus is on the team generating their own ideas and agreeing their own actions
                       to make improvements.</p>
                     <br>
-                    <button class="bg-tedgray px-5 py-1 rounded-xl font-bold text-tedblue300">Open ></button>
+                    <button class="bg-tedgray px-5 py-1 rounded-xl font-bold text-tedblueDark uppercase">Open ></button>
                   </div>
                 </div>
               </div>
-              <div class="bg-white py-4 px-4  rounded-full border-gray-300 border-2">
+              <div class="bg-white py-4 px-4  rounded-full border-gray-300 border-2 ">
                 <div class="flex justify-center items-center text-center h-64 w-64 ">
                   <div class="font-body ">
                     <p class="uppercase text-tedgreen300 font-semibold ">The <br> Perfect Shift</p>
                     <br>
-                    <p class="text-1xl text-tedblueDark">A tool that helps you to think about improving how things are
-                      done and it could support improving communication within your team.</p>
+                    <p class="text-1xl text-tedblueDark">A tool that helps you to think <br> about improving how things <br> are
+                      done and it could support <br> improving communication <br> within your team.</p>
                     <br>
-                    <button class="bg-tedgray px-5 py-1 rounded-xl font-bold text-tedblue300">Open ></button>
+                    <button class="bg-tedgray px-5 py-1 rounded-xl font-bold text-tedblueDark uppercase">Open ></button>
                   </div>
                 </div>
               </div>
 
             </div>
-            <div class="flex flex-row justify-center gap-20 pb-20 ">
+            <div class="flex flex-wrap justify-center gap-20 pb-20 px-20 lg:pt-0 pt-20  ">
               <div class="bg-white py-4 px-4  rounded-full border-gray-300 border-2">
                 <div class="flex justify-center items-center text-center h-64 w-64 ">
                   <div class="font-body ">
                     <p class="uppercase text-tedorange300 font-semibold ">YOU SAID, WE DID</p>
                     <br>
-                    <p class="text-1xl text-tedblueDark">Close the loop with staff by communicating what is happening as
-                      a result of their feedback, click here for a “You said, We Did” poster template.</p>
+                    <p class="text-1xl text-tedblueDark">Close the loop with staff by communicating what is <br> happening as
+                      a result of their <br> feedback, click here for a “You <br> said, We Did” poster template.</p>
                     <br>
-                    <button class="bg-tedgray px-5 py-1 rounded-xl font-bold text-tedblue300">Open ></button>
+                    <button class="bg-tedgray px-5 py-1 rounded-xl font-bold text-tedblueDark uppercase">Open ></button>
                   </div>
                 </div>
               </div>
@@ -332,10 +523,10 @@
                   <div class="font-body ">
                     <p class="uppercase text-tedpurple font-semibold ">FIX IT FRIDAY</p>
                     <br>
-                    <p class="text-1xl text-tedblueDark">A tool that helps the team to identify
+                    <p class="text-1xl text-tedblueDark">A tool that helps the team <br> to identify
                       improvements.<br><br><br></p>
                     <br>
-                    <button class="bg-tedgray px-5 py-1 rounded-xl font-bold text-tedblue300">Open ></button>
+                    <button class="bg-tedgray px-5 py-1 rounded-xl font-bold text-tedblueDark uppercase">Open ></button>
                   </div>
                 </div>
               </div>
@@ -344,9 +535,7 @@
         </div>
       </div>
     </section>
-    <!-- Develop opportunities -->
-
-    <!-- Team effectiveness decisions -->
+    <!-- More top tips -->
     <section>
       <div class="z-0  bg-tedpink relative flex flex-col min-w-0 break-words w-full">
 
@@ -359,15 +548,15 @@
               </h3>
             </div>
           </div>
-          <div class="bg-white py-4 px-10 w-1/3 h-full ml-60">
+          <div class="bg-white py-4 px-10 w-full lg:w-1/3 h-full lg:ml-60">
             <div class="flex justify-center items-center text-center">
               <div class="font-body text-left">
                 <p class="text-2xl uppercase text-secondary font-semibold">Noticeboard</p><br>
-                <p class="text-base text-secondary">Don't forget noticeboards are quick
+                <p class="text-base-custom text-secondary">Don't forget noticeboards are quick
                   and simple ways to share information.</p>
                 <br>
                 <p class="text-2xl uppercase text-secondary font-semibold">Ideas book</p><br>
-                <p class="text-base text-secondary">Why not set up a book within the work area where the team can log
+                <p class="text-base-custom text-secondary">Why not set up a book within the work area where the team can log
                   ideas? Make sure to review this and feedback to the team. It may be helpful to invite the team to log
                   issues and also their ideas for improving the issue.</p>
               </div>
@@ -375,36 +564,36 @@
           </div>
         </div>
 
-        <div class="w-full"> <img class="flex h-full w-full object-cover" src="img/nhsStaff.jpg" alt=""></div>
+        <div class="w-full"> <img class="" src="img/nhsStaff.jpg" alt=""></div>
 
       </div>
       <div class="z-0  bg-tedlightBlue relative flex flex-col min-w-0 break-words w-full ">
         <div class="container mx-auto">
-          <div class="grid grid-cols-2 gap-4">
-            <div class="w-full lg:w-12/12 py-5 mx-10">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:mx-20">
+            <div class="lg:w-12/12 py-5 mx-10">
               <div class=" border-tedpink border-l-6 pl-5">
                 <h3 class="text-3xl font-bold font-body text-left text-secondary uppercase ">
                   DEVELOP YOUR TEAM'S <br> EFFECTIVENESS AT MAKING DECISIONS
                 </h3>
 
               </div>
-              <div class="w-4/5 pt-5 pl-6">
+              <div class="w-full pt-5 ">
 
                 <p class="text-2xl  text-secondary font-semibold font-body">Often groups can make better decisions that
                   one person
                   operating on their own, this is because decisions often require considering lots of information and
                   the
                   most effective decisions are reached by fully exploring a variety of options. </p><br>
-                <p class="text-base  text-secondary">Making team decisions can also help with team engagement
+                <p class="text-base-custom  text-secondary">Making team decisions can also help with team engagement
                   because if people are involved in decision making this makes them feel more valued and they are more
                   likely to understand the reasons about why decisions are made.</p>
               </div>
 
             </div>
 
-            <div>
+            <div class="">
               <div class="w-full bg-white p-10">
-                <p class="text-base text-secondary text-center mx-20">It is important that you involve the right people with
+                <p class="text-base-custom text-secondary text-center lg:px-20">It is important that you involve the right people with
                   decision
                   making and you take the right approach to group decision making. This depends on a number of
                   different factors, including:</p>
@@ -419,19 +608,19 @@
               </div>
             </div>
           </div>
-          <div class="flex flex-wrap justify-center gap-10 pb-10 pt-10">
+          <div class="flex flex-wrap justify-center gap-10 pb-10  lg:flex-row flex-col mx-20 pt-10">
             <button
-              class="text-white font-body text-center text-sm shadow-md  bg-tedpink  hover:bg-tedpinkborder-solid border-pink-500 hover:text-white active:bg-pink-600 font-bold  px-10 py-3 rounded-full outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+              class="text-white font-body text-center text-base shadow-md  bg-tedpink  hover:bg-tedpinkHover border-pink-500 hover:text-white active:bg-pink-600 font-bold  px-10 py-3 rounded-full outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
               type="button">
               Mind Tools
             </button>
             <button
-              class="text-white font-body text-center text-sm shadow-md  bg-tedpink hover:bg-tedpink border-solid border-pink-500 hover:text-white active:bg-pink-600 font-bold  px-10 py-3 rounded-full outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+              class="text-white font-body text-center text-base shadow-md  bg-tedpink hover:bg-tedpinkHover border-pink-500 hover:text-white active:bg-pink-600 font-bold  px-10 py-3 rounded-full outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
               type="button">
               The Stepladder technique
             </button>
             <button
-              class="text-white font-body text-center text-sm shadow-md  bg-tedpink hover:bg-tedpink border-solid border-pink-500 hover:text-white active:bg-pink-600 font-bold  px-10 py-3 rounded-full outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+              class="text-white font-body  text-center text-base shadow-md  bg-tedpink hover:bg-tedpinkHover border-pink-500 hover:text-white active:bg-pink-600 font-bold  px-10 py-3 rounded-full outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
               type="button">
               The Circle of Influence
             </button>
@@ -442,54 +631,54 @@
     </section>
     <!-- Decision Matrix Grid -->
     <section>
-      <div class="relative pt-20 bg-gray-100">
-        <div class="flex flex-wrap justify-center gap-8 items-center pb-10">
-          <div class="w-fumd:ll w-1/12 items-center ">
+      <div class="relative pt-20 bg-gray-100 px-40 lg:px-0">
+        <div class="flex flex-wrap lg:flex-nowrap justify-center gap-8 items-center pb-20 px-10 lg:px-1 -mx-40  ">
+          <div class="flex justify-right">
             <img alt="..." class="max-w-full" " src=" img/ted_forTeams.png">
           </div>
-          <div class="w-full md:w-1/2 md:px-4">
+          <div class="w-full flex md:w-1/2 md:px-4">
             <div class="">
-              <h1 class="text-tedpink font-bold font-body text-xl flex">
+              <h1 class="text-tedpink font-bold font-body text-xl flex ">
                 Decision Matrix Grid
               </h1>
-              <p class="mt-4 mb-4 text-base text-secondary flex">
+              <p class=" mb-4 text-base-custom text-secondary flex">
                 The Decision Matrix Grid is a tool that can help you make decisions as a team, Click here Having
                 discussions as a team helps to build group understanding about why decisions have been made. This tool
                 also helps you objectively consider your options and make appropriate decisions. This tool could also
                 help you if you are leading change and want to involve the team in bringing about the change.
               </p>
               <button
-                class="text-white font-body text-center text-sm shadow-md  bg-tedpink hover:bg-tedpink border-solid border-pink-500 hover:text-white active:bg-pink-600 font-bold  px-10 py-3 rounded-full outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                class="text-white font-body text-center text-base shadow-md  bg-tedpink hover:bg-tedpinkHover border-pink-500 hover:text-white active:bg-pink-600 font-bold  px-10 py-3 rounded-full outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                 type="button">
                 Decision Matrix Grid
               </button>
             </div>
           </div>
         </div>
-        <div class="flex flex-wrap justify-center gap-8 items-center pb-10">
-          <div class="w-fumd:ll w-1/12 items-center ">
+        <div class="flex flex-wrap lg:flex-nowrap justify-center gap-8 items-center pb-20 px-10 lg:px-1 -mx-40  ">
+          <div class="flex justify-right">
             <img alt="..." class="max-w-full" " src=" img/ted_forTeams.png">
           </div>
-          <div class="w-full md:w-1/2 md:px-4">
+          <div class="w-full flex md:w-1/2 md:px-4">
             <div class="">
               <h1 class="text-tedpink font-bold font-body text-xl flex">
                 SWOT analysis
               </h1>
-              <p class="mt-4 mb-4 text-base text-secondary flex">
+              <p class=" mb-4 text-base-custom text-secondary flex">
                 The SWOT analysis tool is an alternative technique to help inform your team’s decision making. You can
                 lead a team discussion using the SWOT tool to understand your team’s strengths and weaknesses as well as
                 the opportunities and threats your team faces.
               </p>
               <button
-                class="text-white font-body text-center text-sm shadow-md  bg-tedpink hover:bg-tedpink border-solid border-pink-500 hover:text-white active:bg-pink-600 font-bold  px-10 py-3 rounded-full outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                class="text-white font-body text-center text-base shadow-md  bg-tedpink hover:bg-tedpinkHover border-pink-500 hover:text-white active:bg-pink-600 font-bold  px-10 py-3 rounded-full outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                 type="button">
                 SWOT analysis
               </button>
             </div>
           </div>
         </div>
-        <div class="flex flex-wrap justify-center gap-8 items-center pb-10">
-          <div class="w-fumd:ll w-1/12 items-center ">
+        <div class="flex flex-wrap lg:flex-nowrap justify-center gap-8 items-center pb-20 px-10 lg:px-1 -mx-40  ">
+          <div class="flex justify-right">
             <img alt="..." class="max-w-full" " src=" img/ted_forTeams.png">
           </div>
           <div class="w-full md:w-1/2 md:px-4">
@@ -497,13 +686,13 @@
               <h1 class="text-tedpink font-bold font-body text-xl flex">
                 Group Think
               </h1>
-              <p class="mt-4 mb-4 text-base text-secondary flex">
+              <p class=" mb-4 text-base-custom text-secondary flex">
                 Sometimes teams slip into Group Think , this is where the desire for group cohesion and consensus
                 prevents good decision making and problem solving, click here for a useful resource on how you can avoid
                 group think and avoid fatal flaws in group decision making.
               </p>
               <button
-                class="text-white font-body text-center text-sm shadow-md  bg-tedpink hover:bg-tedpink border-solid border-pink-500 hover:text-white active:bg-pink-600 font-bold  px-10 py-3 rounded-full outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                class="text-white font-body text-center text-base shadow-md  bg-tedpink hover:bg-tedpinkHover border-pink-500 hover:text-white active:bg-pink-600 font-bold  px-10 py-3 rounded-full outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                 type="button">
                 Group Think
               </button>
@@ -514,26 +703,25 @@
     </section>
     <!-- Your Trust -->
     <section>
-
       <div class="z-0  bg-white relative flex flex-col min-w-0 break-words w-full mb-8">
-        <div class="container mx-auto">
-          <div class="justify-end flex flex-wrap">
-            <div class="w-full lg:w-12/12 py-5 flex justify-between pt-10">
+        <div class="container mx-auto px-6">
+          <div class="justify-end flex flex-wrap ">
+            <div class="w-full lg:w-12/12 py-5 flex justify-between lg:pt-10 px-10">
               <div class=" border-tedpink border-l-6 pl-5">
                 <h3 class="text-5xl font-bold uppercase font-body text-left text-secondary uppercase ">
                   your trust
                 </h3>
               </div>
 
-              <div class="div">
+              <div class="invisible lg:visible">
                 <img alt="..." class="max-w-full" " src=" img/company-logo.png">
               </div>
 
             </div>
             <div class="">
-              <div class="grid grid-cols-2 gap-10 mb-5">
+              <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-5">
 
-                <div class="w-full pl-8 px-40">
+                <div class="w-full px-10 lg:pl-8 lg:px-40">
 
                   <p class="text-xl  text-secondary font-semibold font-body">Lorem ipsum dolor sit amet, consectetur
                     adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -584,42 +772,44 @@
 
     </section>
   </main>
+</div>
   <!-- Footer -->
   <footer class="footer bg-white relative pt-5 pb-5  border-gray-50 border-t-2">
     <div class="container px-4 mx-auto flex flex-wrap items-center justify-between ">
-      <div class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
+      <div class="w-full relative flex justify-center lg:w-auto lg:static lg:block lg:justify-start">
         <div class="flex-shrink-0 flex items-center">
           <div class="flex flex-col">
             <span class="font-body place-items-start text-secondary text-sm mb-2">2021 TED All rights reserved</span>
-          
-        </div>
+
+          </div>
         </div>
 
       </div>
-      <div class="lg:flex flex-grow items-center bg-white lg:bg-opacity-0 lg:shadow-none "
-        id="example-collapse-navbar">
+      <div class="lg:flex flex-grow items-center bg-white lg:bg-opacity-0 lg:shadow-none " id="example-collapse-navbar">
 
         <ul class=" flex flex-col lg:flex-row list-none lg:ml-auto items-center ">
 
           <li class="flex items-center px-2">
             <button
-            class="flex items-center text-sm  font-body font-bold leading-snug  text-secondary hover:opacity-50 hover:text-secondary  px-3 py-2 rounded-full"
-            type="button">
-           HELP & SUPPORT
-          </button>
+              class="flex items-center text-sm  font-body font-bold leading-snug  text-secondary hover:opacity-50 hover:text-secondary  px-3 py-2 rounded-full"
+              type="button">
+              HELP & SUPPORT
+            </button>
           </li>
           <li class="flex items-center px-2">
             <button
-            class="flex items-center text-sm  font-body font-bold leading-snug bg-tedpink text-white hover:opacity-50 hover:text-white  px-3 py-2 rounded-full"
-            type="button">
-            Back to top
-          </button>
+              class="flex items-center text-sm  font-body font-bold leading-snug bg-tedpink text-white hover:opacity-50 hover:text-white  px-3 py-2 rounded-full"
+              type="button">
+              Back to top
+            </button>
           </li>
         </ul>
       </div>
     </div>
-</footer>
+  </footer>
 </body>
+
+
 
 <!-- Script -->
 <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>

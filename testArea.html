@@ -1,237 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+<body>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../public/vendor/@fortawesome/fontawesome-free/css/all.min.css" />
-  <link rel="stylesheet" href="styles.css">
-  <title>TED</title>
-
-  <style>
-    .modal {
-      transition: opacity 0.25s ease;
-    }
-    body.modal-active {
-      overflow-x: hidden;
-      overflow-y: visible !important;
-    }
-  </style>
-</head>
-
-<body >
-  <footer class="footer bg-white relative pt-1 border-b-2 ">
-    <div class="container mx-auto px-6">
-
-        <div class="sm:flex sm:mt-8">
-            <div class="mt-8 sm:mt-0 sm:w-full sm:px-8 flex flex-col md:flex-row justify-between">
-                <div class="flex flex-col">
-                    <span class="font-bold text-gray-700 uppercase mb-2">2021 TED All rights reserved</span>
-                  
-                </div>
-                <div class="flex flex-col">
-                    <span class="font-bold text-gray-700 uppercase mt-4 md:mt-0 mb-2">Register my Organisation</span>
-                   
-                </div>
-                <div class="flex flex-col">
-                    <span class="font-bold text-gray-700 uppercase mt-4 md:mt-0 mb-2">Back to top</span>
-                  
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <section>
-      <div class="z-0 pt-20 bg-white relative flex flex-col min-w-0 break-words w-full -mb-60">
-        <div class="items-center justify-center flex flex-wrap">
-          <div class="md:w- 1/4 m-10 pl-10 ">
-            <img alt="..." class="w-32" src="img/ted_forTeams.png" />
-          </div>
-          <div class="md:w-3/4 z-40 ">
-            <div class="md:pr-12">
-              <h3 class="text-xl font-bold text-secondary">Develop opportunities to suggest ideas and provide feedback
-              </h3>
-              <p class="mt-4 text-sm  text-secondary">
-                Make sure you build in feedback mechanisms so that the team can generate ideas and solutions.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="container mx-auto px-8">
-          <div class="flex flex px-48">
-            <div class="w-full md:w-4/12 px-4 text-center">
-              <div class="relative flex flex-col min-w-0 break-words bg-white w-full">
-                <div class="px-4 py-5 flex-auto">
-                  <h6 class="text-xl font-semibold font-body text-tedblue">Staff Survey Manager toolkit</h6>
-                  <p class="mt-2 mb-4 text-secondary">
-                    Make use of the staff survey to have conversations with the team about what changes you can make to
-                    improve practice or develop staff and identify your reasons to be proud
-                  </p>
-                  <button
-                    class="text-white font-body text-center text-sm shadow-md  bg-tedblue  hover:bg-tedblue border-solid border-pink-500 hover:text-white active:bg-pink-600 font-bold  px-10 py-3 rounded-full outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-                    type="button">
-                    Staff Survey Manager toolkit
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="w-full md:w-4/12 px-4 text-center">
-              <div class="relative flex flex-col min-w-0 break-words bg-white w-full ">
-                <div class="px-4 py-5 flex-auto">
-                  <h6 class="text-xl font-semibold font-body text-tedpink">Our Change</h6>
-                  <p class="mt-2 mb-4 text-secondary">
-                    A tool that brings the team together to discuss issues, ideas and solutions. The focus is on the
-                    team generating their own ideas and agreeing their own actions to make improvements
-                  </p>
-                  <button
-                    class="text-white font-body text-center text-sm shadow-md  bg-tedpink  hover:bg-tedpink border-solid border-pink-500 hover:text-white active:bg-pink-600 font-bold  px-10 py-3 rounded-full outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-                    type="button">
-                    Our Change
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="w-full md:w-4/12 px-4 text-center">
-              <div class="relative flex flex-col min-w-0 break-words bg-white w-full">
-                <div class="px-4 py-5 flex-auto">
-                  <h6 class="text-xl font-body font-semibold text-tedgreen">The Perfect Shift</h6><br>
-                  <p class="mt-2 mb-4 text-secondary">
-                    A tool that helps you to think about improving how things are done and it could support improving
-                    communication within your team
-                  </p>
-                  <button
-                    class="text-white font-body text-center text-sm shadow-md  bg-tedgreen  hover:bg-tedpink border-solid border-tedgreen hover:text-white active:bg-pink-600 font-bold  px-10 py-3 rounded-full outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-                    type="button">
-                    The Perfect Shift
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="container mx-auto px-8 relative">
-          <div class="flex justify-center px-48 pt-20">
-            <div class="w-full md:w-4/12 px-4 text-center">
-              <div class="relative flex flex-col min-w-0 break-words bg-white w-full">
-                <div class="px-4 py-5 flex-auto">
-
-                  <h6 class="text-xl font-semibold font-body text-tedgreen">You said, We did</h6>
-                  <p class="mt-2 mb-4 text-secondary">
-                    Close the loop with staff by communicating what is happening as a result of their feedback, click
-                    here for a “You said, We Did” poster template
-                  </p>
-                  <button
-                    class="text-white font-body text-center text-sm shadow-md  bg-tedgreen  hover:bg-tedgreen border-solid border-pink-500 hover:text-white active:bg-pink-600 font-bold  px-10 py-3 rounded-full outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-                    type="button">
-                    "You said, We Did” poster
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="w-full md:w-4/12 px-4 text-center">
-              <div class="relative flex flex-col min-w-0 break-words bg-white w-full ">
-                <div class="px-4 py-5 flex-auto">
-
-                  <h6 class="text-xl font-semibold font-body text-tedblue">Fix it Friday</h6><br><br>
-                  <p class="mt-2 mb-4 text-secondary">
-                    A tool that helps the team to identify improvements
-                  </p>
-                  <button
-                    class="text-white font-body text-center text-sm shadow-md  bg-tedblue hover:bg-tedblue border-solid border-pink-500 hover:text-white active:bg-pink-600 font-bold  px-10 py-3 rounded-full outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-                    type="button">
-                    Fix it Friday
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="w-full h-full relative -ml-60 -mb-80 z-0" style="font-size: 4.5rem" ;>
-        <i class="far fa-circle fa-10x text-tedpink relative"></i>
-      </div>
-      <div class="flex justify-center pb-10">
-        <h3 class="text-xl font-bold text-secondary text-center">More Top Tips
-        </h3>
-      </div>
-      <div class="container relative mx-auto pb-20">
-        <div class="grid grid-cols-2 gap-4 px-64">
-          <div class="md:w- 1/2 bg-auto bg-center rounded-lg shadow-lg " style="background-image: url('img/book.png')">
-            <div class="flex flex-wrap justify-center p-20 font-body">
-              <h1 class="text-white font-semibold text-3xl text-center">
-                Ideas book
-              </h1>
-              <p class="mt-4 text-lg font-body text-white text-center">
-                Why not set up a book within the work area where the team can log ideas? Make sure to review this and
-                feedback to the team. It may be helpful to invite the team to log issues and also their ideas for
-                improving the issue.
-              </p>
-            </div>
-          </div>
-          <div class="md:w- 1/2 bg-auto bg-center rounded-lg shadow-lg "
-            style="background-image: url('img/noticeboard.png')">
-            <div class="flex flex-wrap justify-center p-20 font-body">
-              <h1 class="text-white font-semibold text-3xl text-center">
-                Noticeboard
-              </h1>
-              <p class="mt-4 text-lg font-body text-white text-center">
-                Don't forget noticeboards are quick and simple ways to share information.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-</footer>
-</body>
-
-<!-- Script -->
-<script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+<p id="demo"></p>
 
 <script>
 
-var openmodal = document.querySelectorAll('.modal-open')
-    for (var i = 0; i < openmodal.length; i++) {
-      openmodal[i].addEventListener('click', function(event){
-    	event.preventDefault()
-    	toggleModal()
-      })
-    }
-    
-    const overlay = document.querySelector('.modal-overlay')
-    overlay.addEventListener('click', toggleModal)
-    
-    var closemodal = document.querySelectorAll('.modal-close')
-    for (var i = 0; i < closemodal.length; i++) {
-      closemodal[i].addEventListener('click', toggleModal)
-    }
-    
-    document.onkeydown = function(evt) {
-      evt = evt || window.event
-      var isEscape = false
-      if ("key" in evt) {
-    	isEscape = (evt.key === "Escape" || evt.key === "Esc")
-      } else {
-    	isEscape = (evt.keyCode === 27)
-      }
-      if (isEscape && document.body.classList.contains('modal-active')) {
-    	toggleModal()
-      }
-    };
-    
-    
-    function toggleModal () {
-      const body = document.querySelector('body')
-      const modal = document.querySelector('.modal')
-      modal.classList.toggle('opacity-0')
-      modal.classList.toggle('pointer-events-none')
-      body.classList.toggle('modal-active')
+    var myObj, i, j, x = "";
+    myObj = {
+        "top10": [
+                  {
+                      "state": "red",
+                      "claimed": true,
+                      "branch": "release-2.3.4",
+                      "job": "sdk",
+                      "culprit": "Hansi Meier"
+                  },
+                  {
+                      "state": "blue",
+                      "claimed": true,
+                      "branch": "master",
+                      "job": "ibeo-cloud",
+                      "culprit": "Karl Gustavo"
+                  },
+                  {
+                      "state": "yellow",
+                      "claimed": false,
+                      "branch": "feature-abc",
+                      "job": "appbase",
+                      "culprit": "MAfred Auch"
+                  }
+        ]
     }
 
- 
+    for (i in myObj.top10) {
+    x += "<h2>" + myObj.top10[i].branch + "</h2>";
+    x += "<h2>" + myObj.top10[i].job + "</h2>";
+    x += "<h2>" + myObj.top10[i].culprit + "</h2>";
+    }
+
+    document.getElementById("demo").innerHTML = x;
+
 </script>
 
+</body>
 </html>
